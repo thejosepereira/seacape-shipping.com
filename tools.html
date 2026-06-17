@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tools &amp; Glossary – Seacape Shipping</title>
+  <meta name="description" content="Shipping industry glossary and reference tools. Look up maritime abbreviations, Incoterms, and shipping terminology used in the dry bulk trade."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  
+  <style>
+    .tools-layout { max-width: 1280px; margin: 0 auto; padding: 4rem 2rem; }
+    .search-bar {
+      position: relative; max-width: 540px; margin-bottom: 2.5rem;
+    }
+    .search-bar svg {
+      position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+      color: var(--muted); pointer-events: none;
+    }
+    #glossarySearch {
+      width: 100%; padding: .85rem 1rem .85rem 2.75rem;
+      border: 1.5px solid var(--border); border-radius: 10px;
+      background: #fff; color: var(--text);
+      font-family: inherit; font-size: .95rem;
+      transition: border-color 200ms, box-shadow 200ms;
+      outline: none;
+    }
+    #glossarySearch:focus {
+      border-color: var(--ocean);
+      box-shadow: 0 0 0 3px rgba(3,105,161,.1);
+    }
+    .alpha-tabs {
+      display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2.5rem;
+    }
+    .alpha-tab {
+      padding: .35rem .75rem; border-radius: 6px;
+      border: 1.5px solid var(--border);
+      background: #fff; color: var(--muted);
+      font-size: .8rem; font-weight: 600;
+      cursor: pointer;
+      transition: all 200ms;
+    }
+    .alpha-tab:hover { border-color: var(--ocean); color: var(--ocean); }
+    .alpha-tab.active { background: var(--ocean); border-color: var(--ocean); color: #fff; }
+    .glossary-letter-group { margin-bottom: 2.5rem; }
+    .glossary-letter-heading {
+      font-size: 1.25rem; font-weight: 700; color: var(--ocean);
+      border-bottom: 2px solid rgba(3,105,161,.15);
+      padding-bottom: .5rem; margin-bottom: 1rem;
+      letter-spacing: -.01em;
+    }
+    .glossary-table { width: 100%; border-collapse: collapse; }
+    .glossary-table tr { border-bottom: 1px solid var(--border); }
+    .glossary-table tr:last-child { border-bottom: none; }
+    .glossary-table td {
+      padding: .85rem .5rem; vertical-align: top; font-size: .875rem;
+    }
+    .glossary-table td:first-child {
+      font-weight: 700; color: var(--text); white-space: nowrap;
+      width: 160px; padding-right: 1.5rem;
+    }
+    .glossary-table td:last-child { color: var(--muted); line-height: 1.6; }
+    .glossary-item { }
+    @media (max-width: 600px) {
+      .glossary-table td:first-child { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="routes.html">Routes</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="routes.html">Routes</a>
+  <a href="tools.html">Tools</a>
+  <a href="contact.html" class="nav-cta">Contact Us</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+        <h1 class="page-hero-title">Shipping Tools &amp; Glossary</h1>
+    <p class="page-hero-sub">A comprehensive reference for maritime abbreviations, Incoterms, chartering terminology, and shipping industry definitions used in dry bulk trade.</p>
+  </div>
+</div>
+
+<div class="tools-layout">
+  <div class="search-bar">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="search" id="glossarySearch" placeholder="Search terms, abbreviations…" aria-label="Search glossary"/>
+  </div>
+
+  <div class="alpha-tabs" role="tablist">
+    <button class="alpha-tab active" data-letter="ALL" role="tab">All</button>
+    <button class="alpha-tab" data-letter="A" role="tab">A</button>
+    <button class="alpha-tab" data-letter="B" role="tab">B</button>
+    <button class="alpha-tab" data-letter="C" role="tab">C</button>
+    <button class="alpha-tab" data-letter="D" role="tab">D</button>
+    <button class="alpha-tab" data-letter="E" role="tab">E</button>
+    <button class="alpha-tab" data-letter="F" role="tab">F</button>
+    <button class="alpha-tab" data-letter="G" role="tab">G</button>
+    <button class="alpha-tab" data-letter="H" role="tab">H</button>
+    <button class="alpha-tab" data-letter="I" role="tab">I</button>
+    <button class="alpha-tab" data-letter="L" role="tab">L</button>
+    <button class="alpha-tab" data-letter="M" role="tab">M</button>
+    <button class="alpha-tab" data-letter="N" role="tab">N</button>
+    <button class="alpha-tab" data-letter="O" role="tab">O</button>
+    <button class="alpha-tab" data-letter="P" role="tab">P</button>
+    <button class="alpha-tab" data-letter="R" role="tab">R</button>
+    <button class="alpha-tab" data-letter="S" role="tab">S</button>
+    <button class="alpha-tab" data-letter="T" role="tab">T</button>
+    <button class="alpha-tab" data-letter="U" role="tab">U</button>
+    <button class="alpha-tab" data-letter="V" role="tab">V</button>
+    <button class="alpha-tab" data-letter="W" role="tab">W</button>
+    <button class="alpha-tab" data-letter="Y" role="tab">Y</button>
+  </div>
+
+  <div id="glossaryContent">
+
+    <div class="glossary-letter-group glossary-item" data-letter="A">
+      <h2 class="glossary-letter-heading">A</h2>
+      <table class="glossary-table">
+        <tr><td>A/S</td><td>Alongside</td></tr>
+        <tr><td>AA</td><td>Always Afloat</td></tr>
+        <tr><td>AAAA</td><td>Always Accessible Always Afloat</td></tr>
+        <tr><td>AARA</td><td>Amsterdam-Antwerp-Rotterdam Area</td></tr>
+        <tr><td>ABT</td><td>About</td></tr>
+        <tr><td>ADCOM</td><td>Address Commission</td></tr>
+        <tr><td>AFFREIGHTMENT</td><td>The hiring of a ship in whole or part</td></tr>
+        <tr><td>AFSPS</td><td>Arrival First Sea Pilot Station (Norway)</td></tr>
+        <tr><td>AFT</td><td>At or towards the stern or rear of a ship</td></tr>
+        <tr><td>AGW</td><td>All Going Well</td></tr>
+        <tr><td>AHL</td><td>Australian Hold Ladders</td></tr>
+        <tr><td>ANTHAM</td><td>Antwerp-Hamburg Range</td></tr>
+        <tr><td>APS</td><td>Arrival Pilot Station</td></tr>
+        <tr><td>ARAG</td><td>Amsterdam-Rotterdam--Antwerp-Ghent Range</td></tr>
+        <tr><td>ATDNSHINC</td><td>Any Time Day or Night Sundays and Holidays Included</td></tr>
+        <tr><td>ATUTC</td><td>Actual Times Used to Count</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="B">
+      <h2 class="glossary-letter-heading">B</h2>
+      <table class="glossary-table">
+        <tr><td>BAF</td><td>Bunker Adjustment Factor. A Fuel Surcharge expressed as percentage added or subtracted from the freight amount reflecting the movement in the market place price for bunkers.</td></tr>
+        <tr><td>BALLAST</td><td>Heavy weight, often sea water, necessary for the stability and safety of a ship which is not carying cargo.</td></tr>
+        <tr><td>BAREBOAT CHTR</td><td>Bareboat Charter - Owners lease a specific ship and control its technical management and commercial operations only.</td></tr>
+        <tr><td>BBB</td><td>Before Breaking Bulk</td></tr>
+        <tr><td>BDI</td><td>Both Dates Inclusive</td></tr>
+        <tr><td>BEAM</td><td>The maximum breadth of a ship</td></tr>
+        <tr><td>BENDS</td><td>Both Ends (Load &amp; Discharge Ports)</td></tr>
+        <tr><td>BI</td><td>Both Inclusive</td></tr>
+        <tr><td>BIMCO</td><td>The Baltic and International Maritime Council</td></tr>
+        <tr><td>BM</td><td>Beam</td></tr>
+        <tr><td>BOB</td><td>Bunker on Board</td></tr>
+        <tr><td>BOFFER</td><td>Best Offer</td></tr>
+        <tr><td>BROB</td><td>Bunkers Remaining on Board</td></tr>
+        <tr><td>BSS</td><td>Basis</td></tr>
+        <tr><td>BSS 1/1</td><td>Basis 1 Port to 1 Port</td></tr>
+        <tr><td>BT</td><td>Berth Terms</td></tr>
+        <tr><td>BUNDLING</td><td>This is the assembly of pieces of cargo, secured into one manageable unit. This is a very flexible description, a rule of thumb is to present cargo at a size easily handled by a large (20 tonne) fork lift truck.</td></tr>
+        <tr><td>BUNKERS</td><td>Name given for vessels Fuel and Diesel Oil supplies (Originates from coal bunkers)</td></tr>
+        <tr><td>BWAD</td><td>Brackish Water Arrival Draft</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="C">
+      <h2 class="glossary-letter-heading">C</h2>
+      <table class="glossary-table">
+        <tr><td>CBM</td><td>Cubic Meter</td></tr>
+        <tr><td>CHOPT</td><td>Charterers Option</td></tr>
+        <tr><td>CHTRS</td><td>Charterers</td></tr>
+        <tr><td>CIF</td><td>Cost, Insurance &amp; Freight. Seller pays all these costs to a nominated port or place of discharge.</td></tr>
+        <tr><td>COA</td><td>Contract of Affreightment - Owners agree to accept a cost per revenue ton for cargo carried on a specific number of voyages.</td></tr>
+        <tr><td>COACP</td><td>Contract of Affreightment Charter Party</td></tr>
+        <tr><td>COB</td><td>Close of Business</td></tr>
+        <tr><td>COD</td><td>Cash On Delivery</td></tr>
+        <tr><td>COGSA</td><td>Carriage of Goods by Sea Act</td></tr>
+        <tr><td>CONS</td><td>Consumption</td></tr>
+        <tr><td>COP</td><td>Custom Of Port</td></tr>
+        <tr><td>CPD</td><td>Charterers Pay Dues</td></tr>
+        <tr><td>CPT</td><td>Carriage Paid To</td></tr>
+        <tr><td>CQD</td><td>Customary Quick Despatch</td></tr>
+        <tr><td>CRN</td><td>Crane</td></tr>
+        <tr><td>CROB</td><td>Cargo Remaining on Board</td></tr>
+        <tr><td>CST</td><td>Centistoke</td></tr>
+        <tr><td>CTR</td><td>Container Fitted</td></tr>
+        <tr><td>CVE</td><td>Communication / Victuals / Entertainment</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="D">
+      <h2 class="glossary-letter-heading">D</h2>
+      <table class="glossary-table">
+        <tr><td>DAPS</td><td>Days all Purposes (Total days for loading &amp; discharging)</td></tr>
+        <tr><td>DDP</td><td>Delivered Duty Paid.</td></tr>
+        <tr><td>DDU</td><td>Delivered Duty unpaid.</td></tr>
+        <tr><td>DEM</td><td>Demurrage</td></tr>
+        <tr><td>DESP</td><td>Despatch</td></tr>
+        <tr><td>DET</td><td>Detention</td></tr>
+        <tr><td>DHDATSBE</td><td>Despatch Half Demurrage on Actual Time Saved Both Ends</td></tr>
+        <tr><td>DHDWTSBE</td><td>Despatch Half Demurrage on Working Time Saved Both Ends</td></tr>
+        <tr><td>DISCH</td><td>Discharge</td></tr>
+        <tr><td>DK</td><td>Deck</td></tr>
+        <tr><td>DLOSP</td><td>Dropping Last Outwards Sea Pilot (Norway)</td></tr>
+        <tr><td>DNRSAOCLONL</td><td>Discountless and Non-Returnable Ship and/or Cargo Lost or Not Lost</td></tr>
+        <tr><td>DO</td><td>Dropping Off Last Sea Pilot (Norway)</td></tr>
+        <tr><td>DOP</td><td>Dropping Outward Pilot</td></tr>
+        <tr><td>DOT</td><td>Department of Transport</td></tr>
+        <tr><td>DRAFT</td><td>Depth to which a ship is immersed in water. The depth varies according to the design of the ship and will be greater or lesser depending not only on the weight of the ship and everything on board, but also on the density of the water in which the ship is lying.</td></tr>
+        <tr><td>DRK</td><td>Derrick</td></tr>
+        <tr><td>DUNNAGE</td><td>Materials of various types, often timber or matting, placed among the cargo for separation, and hence protection from damage, for ventilation and, in the case of certain cargoes, to provide space in which the forks of a lift truck may be inserted.</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="E">
+      <h2 class="glossary-letter-heading">E</h2>
+      <table class="glossary-table">
+        <tr><td>EC</td><td>East Coast</td></tr>
+        <tr><td>EIU</td><td>Even if Used</td></tr>
+        <tr><td>ELVENT</td><td>Electric Ventilation</td></tr>
+        <tr><td>ETA</td><td>Estimated Time of Arrival</td></tr>
+        <tr><td>ETC</td><td>Estimated Time of Completion</td></tr>
+        <tr><td>ETD</td><td>Estimated Time of Departure</td></tr>
+        <tr><td>ETS</td><td>Estimated Time of Sailing</td></tr>
+        <tr><td>EXW</td><td>Ex Works</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="F">
+      <h2 class="glossary-letter-heading">F</h2>
+      <table class="glossary-table">
+        <tr><td>FAS</td><td>Free Alongside Ship. Seller delivers goods to appropriate dock or terminal at port of embarkation and buyer covers costs and risks of loading.</td></tr>
+        <tr><td>FD</td><td>Free of Despatch</td></tr>
+        <tr><td>FDD</td><td>Freight Demurrage Deadfreight</td></tr>
+        <tr><td>FDIS</td><td>Free Discharge</td></tr>
+        <tr><td>FEU</td><td>Forty foot container equivalency unit - Standard 40‘Container</td></tr>
+        <tr><td>FHEX</td><td>Fridays/Holidays Excluded</td></tr>
+        <tr><td>FHINC</td><td>Fridays/Holidays Included</td></tr>
+        <tr><td>FILO</td><td>Free In/Liner Out. Seafreight with which the shipper pays load costs and the carrier pays for discharge Free In/Out. Freight booked FIO includes the seafreight, but no loading/discharging costs, i.e. the charterer pays for cost of loading and discharging cargo.</td></tr>
+        <tr><td>FIOS</td><td>Free In/Out Stowed. As per FIO, but includes stowage costs.</td></tr>
+        <tr><td>FIOSLSD</td><td>Free In/Out Stowed, Lashed, Secured and Dunnaged. As per FIO, but includes cost of lashing securing and dunnaging cargo to Masters satisfaction.</td></tr>
+        <tr><td>FIOST</td><td>Free In/Out and Trimmed. Charterer pays for cost of loading/discharging cargo, including stowage and trimming.</td></tr>
+        <tr><td>FIOT</td><td>Free In/Out and Trimmed. As per FIOS but includes trimming - the leveling of bulk cargoes</td></tr>
+        <tr><td>FIT</td><td>Free In Trimmed</td></tr>
+        <tr><td>FIW</td><td>Free In Wagon</td></tr>
+        <tr><td>FIXING</td><td>Chartering a Vessel</td></tr>
+        <tr><td>FLT</td><td>Full Liner Terms - Shipowner pays to load and discharge the cargo</td></tr>
+        <tr><td>FMC</td><td>Federal Maritime Commission - US government agency</td></tr>
+        <tr><td>FMS</td><td>Fathoms - 6 feet</td></tr>
+        <tr><td>FOB</td><td>Free on Board. Seller sees the goods „over the ship‘s rail“ on to the ship which is arranged and paid for by the buyer</td></tr>
+        <tr><td>FOFFER</td><td>Firm Offer</td></tr>
+        <tr><td>FOG</td><td>For Our Guidance</td></tr>
+        <tr><td>FOQ</td><td>Free On Quay</td></tr>
+        <tr><td>FOR</td><td>Free On Rail</td></tr>
+        <tr><td>FORCE MAJEURE</td><td>Clause limiting responsibilities of the charterers, shippers and receivers due to events beyond their control.</td></tr>
+        <tr><td>FOT</td><td>Free On Truck</td></tr>
+        <tr><td>FREE OUT</td><td>Free of discharge costs to Owners</td></tr>
+        <tr><td>FWAD</td><td>Fresh Water Departure Draft</td></tr>
+        <tr><td>FYG</td><td>For Your Guidance</td></tr>
+        <tr><td>FYI</td><td>For Your Information</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="G">
+      <h2 class="glossary-letter-heading">G</h2>
+      <table class="glossary-table">
+        <tr><td>GA</td><td>General Average</td></tr>
+        <tr><td>GLS</td><td>Gearless</td></tr>
+        <tr><td>GNCN</td><td>Gencon - a standard BIMCO charter party form</td></tr>
+        <tr><td>GO</td><td>Gas Oil</td></tr>
+        <tr><td>GRD</td><td>Geared</td></tr>
+        <tr><td>GRT</td><td>Gross Registered Tonnage</td></tr>
+        <tr><td>GSB</td><td>Good Safe Berth</td></tr>
+        <tr><td>GSP</td><td>Good Safe Port</td></tr>
+        <tr><td>GTEE</td><td>Guarantee</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="H">
+      <h2 class="glossary-letter-heading">H</h2>
+      <table class="glossary-table">
+        <tr><td>HA</td><td>Hatch</td></tr>
+        <tr><td>HDWTS</td><td>Half Despatch Working Time Saved</td></tr>
+        <tr><td>HMS</td><td>Heavy Metal Scrap</td></tr>
+        <tr><td>HO</td><td>Hold</td></tr>
+        <tr><td>HW</td><td>High Water</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="I">
+      <h2 class="glossary-letter-heading">I</h2>
+      <table class="glossary-table">
+        <tr><td>ILOHC</td><td>In Lieu of Holds Cleaning</td></tr>
+        <tr><td>IMDG</td><td>International Maritime Dangerous Goods Code</td></tr>
+        <tr><td>IMO</td><td>International Maritime Organisation</td></tr>
+        <tr><td>IND</td><td>Indication</td></tr>
+        <tr><td>INTERMODAL</td><td>Carriage of a commodity by different modes of transport, i.e. sea, road, rail and air within a single journey.</td></tr>
+        <tr><td>ITF</td><td>International Transport Federation - international body that regulates crewing of ships</td></tr>
+        <tr><td>IU</td><td>If Used</td></tr>
+        <tr><td>IUATUTC</td><td>If Used, Actual Time Used To Count</td></tr>
+        <tr><td>IUHATUTC</td><td>If Used, Half Actual Time Used To Count</td></tr>
+        <tr><td>IWL</td><td>Institute Warranty Limits</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="L">
+      <h2 class="glossary-letter-heading">L</h2>
+      <table class="glossary-table">
+        <tr><td>LANE METER</td><td>A method of measuring the space capacity of Ro/Ro ships whereby each unit of space (Linear Meter) is represented by an area of deck 1.0 meter in length x 2.0 meters in width.</td></tr>
+        <tr><td>LAT</td><td>Latitude</td></tr>
+        <tr><td>LOA</td><td>Length Overall of the vessel</td></tr>
+        <tr><td>LOW</td><td>Last Open Water</td></tr>
+        <tr><td>LSD</td><td>Lashed Secured Dunnaged</td></tr>
+        <tr><td>LT</td><td>Liner Terms</td></tr>
+        <tr><td>LW</td><td>Low Water</td></tr>
+        <tr><td>LYCN</td><td>Laycan (Layday Cancelling Date)</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="M">
+      <h2 class="glossary-letter-heading">M</h2>
+      <table class="glossary-table">
+        <tr><td>M/V</td><td>Motor Vessel</td></tr>
+        <tr><td>MB</td><td>Merchant Broker</td></tr>
+        <tr><td>MIN/MAX</td><td>Minimum/Maximum (cargo quantity)</td></tr>
+        <tr><td>MOLCHOPT</td><td>More or Less Charterers Option</td></tr>
+        <tr><td>MOLOO</td><td>More or Less Owners Option</td></tr>
+        <tr><td>MT</td><td>Metric Tonne (i.e. 1,000 kilos / 2204.6lbs)</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="N">
+      <h2 class="glossary-letter-heading">N</h2>
+      <table class="glossary-table">
+        <tr><td>NAABSA</td><td>Not Always Afloat But Safely Aground</td></tr>
+        <tr><td>NCB</td><td>National Cargo Bureau</td></tr>
+        <tr><td>NESTING</td><td>Implies that cargo is presented stacked in the contour of similarly shaped cargo, it may be likened to a stack of plates.</td></tr>
+        <tr><td>NON-REVERSIBLE</td><td>(Detention). If loading completed sooner than expected, then saved days will not be added to discharge time allowed.</td></tr>
+        <tr><td>NOR</td><td>Notice of Readiness</td></tr>
+        <tr><td>NRT</td><td>Net Registered Tonnage</td></tr>
+        <tr><td>NYPE</td><td>New York Produce Exchange</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="O">
+      <h2 class="glossary-letter-heading">O</h2>
+      <table class="glossary-table">
+        <tr><td>OO</td><td>Owners Option</td></tr>
+        <tr><td>OSH</td><td>Open Shelter Deck</td></tr>
+        <tr><td>OWS</td><td>Owners</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="P">
+      <h2 class="glossary-letter-heading">P</h2>
+      <table class="glossary-table">
+        <tr><td>PASTUS</td><td>Past Us</td></tr>
+        <tr><td>PC</td><td>Period of Charter</td></tr>
+        <tr><td>PCGO</td><td>Part Cargo</td></tr>
+        <tr><td>PCT</td><td>Percent</td></tr>
+        <tr><td>PDPR</td><td>Per Day Pro Rata</td></tr>
+        <tr><td>PERDIEM</td><td>Per Diem - By the Day</td></tr>
+        <tr><td>PHPD</td><td>Per Hatch Per Day</td></tr>
+        <tr><td>PRATIQUE</td><td>License or permission to use a port</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="R">
+      <h2 class="glossary-letter-heading">R</h2>
+      <table class="glossary-table">
+        <tr><td>RCVR</td><td>Receivers</td></tr>
+        <tr><td>REVERSIBLE</td><td>(Detention) If loading completed sooner than expected at load port, then days saved can be added to discharge operations.</td></tr>
+        <tr><td>ROB</td><td>Remaining On Board</td></tr>
+        <tr><td>RT</td><td>Revenue Tonne (i.e. 1.0 metric Tonne or 1.0 cubic meter, whichever greater). The overall RT is calculated on a line by line basis of the Packing List using the largest amount. The overall freight liability is calculated on the total RT amount, multiplied by the freight rate.</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="S">
+      <h2 class="glossary-letter-heading">S</h2>
+      <table class="glossary-table">
+        <tr><td>SATPM</td><td>Saturday P.M.</td></tr>
+        <tr><td>SB</td><td>Safe Berth</td></tr>
+        <tr><td>SEAFREIGHT</td><td>Costs charged for transporting goods over the sea. This does not cover any haulage or loading/discharging costs but the sea transport only.</td></tr>
+        <tr><td>SELFD</td><td>Self Discharging</td></tr>
+        <tr><td>SF</td><td>Stowage factor. Cubic space occupied by one ton (2,240 lbs/1,000 kgs) of cargo.</td></tr>
+        <tr><td>SHEX</td><td>Sundays/Holidays Excluded</td></tr>
+        <tr><td>SHINC</td><td>Sundays/Holidays Included</td></tr>
+        <tr><td>SKIDS</td><td>Are bearers (timber or steel) positioned under cargo to enable fork lift handling at port, and for ease of rigging and lashing on board ship.</td></tr>
+        <tr><td>SL</td><td>Bale (capacity)</td></tr>
+        <tr><td>SOC</td><td>Shipper Owned Container</td></tr>
+        <tr><td>SOF</td><td>Statement Of Facts</td></tr>
+        <tr><td>SP</td><td>Safe Port</td></tr>
+        <tr><td>SRBL</td><td>Signing and Releasing Bill of Lading</td></tr>
+        <tr><td>STABILITY</td><td>It is paramount that a vessel is stable in all respects at all times. When cargo is loaded/discharged, the stability is monitored by a computer, which takes into account the weight and position of cargo within the vessel.</td></tr>
+        <tr><td>STARBOARD</td><td>Subject To Enough Merchandise (Availability of Cargo)</td></tr>
+        <tr><td>STERN</td><td>The aft part of a ship</td></tr>
+        <tr><td>SUB</td><td>Subject (to)</td></tr>
+        <tr><td>SUPERCARGO</td><td>Person employed by a ship owner, shipping company, charterer of a ship or shipper of goods to supervise cargo handling operations. Often called a port captain.</td></tr>
+        <tr><td>SWAD</td><td>Salt Water Arrival Draft</td></tr>
+        <tr><td>SWDD</td><td>Salt Water Departure Draft</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="T">
+      <h2 class="glossary-letter-heading">T</h2>
+      <table class="glossary-table">
+        <tr><td>TBC</td><td>to be confirmed</td></tr>
+        <tr><td>TC</td><td>Time Charter - Owners agree to hire a particular ship for a set length of time</td></tr>
+        <tr><td>TEU</td><td>Twenty Foot Equivalency Unit - Standard 20‘ Container</td></tr>
+        <tr><td>TTL</td><td>Total</td></tr>
+        <tr><td>TW</td><td>Tween Decker</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="U">
+      <h2 class="glossary-letter-heading">U</h2>
+      <table class="glossary-table">
+        <tr><td>USC</td><td>Unless Sooner Commenced</td></tr>
+        <tr><td>UU</td><td>Unless Used</td></tr>
+        <tr><td>UUIUATUTC</td><td>Unless Used If Used Actual Time Used To Count</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="V">
+      <h2 class="glossary-letter-heading">V</h2>
+      <table class="glossary-table">
+        <tr><td>VPD</td><td>Vessel Pays Dues</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="W">
+      <h2 class="glossary-letter-heading">W</h2>
+      <table class="glossary-table">
+        <tr><td>WCCON</td><td>Whether Customs Cleared Or Not</td></tr>
+        <tr><td>WIBON</td><td>Whether In Berth Or Not</td></tr>
+        <tr><td>WIFPON</td><td>Whether In Free Pratique or not</td></tr>
+        <tr><td>WIPON</td><td>Whether In Port Or Not</td></tr>
+        <tr><td>WOG</td><td>Without Guarantee</td></tr>
+        <tr><td>WPD</td><td>Weather Permitting Day</td></tr>
+        <tr><td>WRIC</td><td>Wire Rods In Coils</td></tr>
+        <tr><td>WWD</td><td>Weather Working Day</td></tr>
+        <tr><td>WWR</td><td>When, Where Ready</td></tr>
+        <tr><td>WWWW</td><td>Wibon, Wccon, Wifpon, Wipon</td></tr>
+      </table>
+    </div>
+
+    <div class="glossary-letter-group glossary-item" data-letter="Y">
+      <h2 class="glossary-letter-heading">Y</h2>
+      <table class="glossary-table">
+        <tr><td>YAR</td><td>York Antwerp Rules</td></tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
+        <p class="footer-desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/seacape-shipping" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/seacape.shipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="routes.html">Routes</a></li>
+          <li><a href="contact.html#global-presence">Global Presence</a></li>
+          <li><a href="index.html#clients">Our Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div>
+        <p class="footer-heading">Our Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#dry-bulk">Industrial Dry Bulk Shipping</a></li>
+          <li><a href="services.html#steels">Steel &amp; Metallurgical Cargo</a></li>
+          <li><a href="services.html#project-cargo">Project Cargo &amp; Heavy Lift</a></li>
+          <li><a href="services.html#chartering">Chartering &amp; Vessel Management</a></li>
+          <li><a href="services.html#freight-forwarder">Freight Forwarder</a></li>
+          <li><a href="services.html#inland-chile">Inland Logistics – Chile</a></li>
+          <li><a href="services.html#inland-peru">Inland Logistics – Peru</a></li>
+        </ul>
+      </div>
+
+      <!-- International Presence -->
+      <div>
+        <p class="footer-heading">International Presence</p>
+        <ul class="footer-links footer-presence">
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Miami, USA — Headquarters
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Santiago, Chile
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lima, Peru
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            São Paulo, Brazil
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Shanghai, China
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Zug, Switzerland — Seacape GmbH
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Odessa, Ukraine
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <p class="footer-heading">Contact Us</p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          9150 S. Dadeland Blvd., Suite 908<br/>Miami, Florida 33156, USA
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.49a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +1 (305) 670-4484
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:operations@seacape-shipping.com">operations@seacape-shipping.com</a>
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:charter@seacape-shipping.com">charter@seacape-shipping.com</a>
+        </p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
+      <p class="footer-copy">Miami \&nbsp;\&middot;\&nbsp; Santiago \&nbsp;\&middot;\&nbsp; Lima \&nbsp;\&middot;\&nbsp; Brazil \&nbsp;\&middot;\&nbsp; Shanghai \&nbsp;\&middot;\&nbsp; Zug \&nbsp;\&middot;\&nbsp; Odessa</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

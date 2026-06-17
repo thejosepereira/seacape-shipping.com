@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Seacape Shipping</title>
+  <meta name="description" content="Get in touch with Seacape Logistics. Miami HQ and Santiago offices. Contact us for freight quotes, shipping inquiries, and partnership opportunities."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  
+  <style>
+    .contact-layout {
+      max-width: 1280px; margin: 0 auto; padding: 5rem 2rem;
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start;
+    }
+    .contact-info h2 { font-size: 1.75rem; font-weight: 700; letter-spacing: -.02em; margin: 0 0 1rem; }
+    .contact-info > p { color: var(--muted); line-height: 1.75; margin: 0 0 2.5rem; }
+    .office-block { margin-bottom: 2.5rem; }
+    .office-block-city { font-size: 1rem; font-weight: 700; margin: 0 0 .25rem; }
+    .office-block-role { font-size: .8rem; font-weight: 600; color: var(--ocean); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 1rem; }
+    .contact-line { display: flex; align-items: flex-start; gap: .65rem; margin-bottom: .65rem; }
+    .contact-line svg { flex-shrink: 0; margin-top: 2px; color: var(--ocean); }
+    .contact-line a, .contact-line span { font-size: .875rem; color: var(--muted); text-decoration: none; transition: color 200ms; }
+    .contact-line a:hover { color: var(--text); }
+    .divider { height: 1px; background: var(--border); margin: 2rem 0; }
+    .form-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 16px; padding: 2.5rem;
+      box-shadow: 0 4px 24px rgba(15,23,42,.06);
+    }
+    .form-card h3 { font-size: 1.25rem; font-weight: 700; margin: 0 0 .5rem; letter-spacing: -.01em; }
+    .form-card > p { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .submit-btn {
+      width: 100%; padding: .85rem;
+      background: var(--ocean); color: #fff;
+      border: none; border-radius: 8px;
+      font-family: inherit; font-size: 1rem; font-weight: 600;
+      cursor: pointer;
+      transition: background 200ms, transform 200ms, box-shadow 200ms;
+    }
+    .submit-btn:hover {
+      background: var(--ocean-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(3,105,161,.3);
+    }
+    .submit-btn:disabled { opacity: .7; cursor: not-allowed; transform: none; }
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="routes.html">Routes</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="routes.html">Routes</a>
+  <a href="tools.html">Tools</a>
+  <a href="contact.html" class="nav-cta">Contact Us</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+        <h1 class="page-hero-title">Contact Seacape</h1>
+    <p class="page-hero-sub">Our team in Miami and Santiago is ready to assist with your shipping inquiries, freight quotes, and operational questions.</p>
+  </div>
+</div>
+
+<div class="contact-layout">
+  <!-- Left: info -->
+  <div class="reveal">
+    <h2>Let's talk cargo.</h2>
+    <p>
+      Whether you're exploring a new shipping route, need a competitive freight quote, or want to discuss a long-term partnership, our experienced team is here to help.
+    </p>
+
+    <div class="office-block">
+      <p class="office-block-city">Miami, Florida</p>
+      <p class="office-block-role">Global Headquarters</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>9150 S. Dadeland Blvd., Suite 908<br/>Miami, Florida 33156, USA</span>
+      </div>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.49a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+13056704484">+1 (305) 670-4484</a>
+      </div>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:operations@seacape-shipping.com">operations@seacape-shipping.com</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">Santiago, Chile</p>
+      <p class="office-block-role">South American Operations</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Santiago, Chile<br/>Regional operations &amp; commercial office</span>
+      </div>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.49a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+56223224700">+56 2 232244700</a>
+      </div>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:chile@seacape-shipping.com">chile@seacape-shipping.com</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">Shanghai, China</p>
+      <p class="office-block-role">China Office</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Suite 906-1, Building A, No. 355 Yuanshen Rd<br/>Pudong, Shanghai, China 200135</span>
+      </div>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:China@seacape-shipping.com">China@seacape-shipping.com</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">Zug, Switzerland</p>
+      <p class="office-block-role">Europe Office — Seacape GmbH</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Baarerstrasse 25<br/>Zug, Switzerland</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">Odessa, Ukraine</p>
+      <p class="office-block-role">Ukraine Office</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Odessa, Ukraine</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">Lima, Peru</p>
+      <p class="office-block-role">Peru Office</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Lima, Peru</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="office-block">
+      <p class="office-block-city">São Paulo, Brazil</p>
+      <p class="office-block-role">Brazil Office</p>
+      <div class="contact-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>São Paulo, Brazil</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <p style="font-size:.8rem;color:var(--muted);line-height:1.6;">
+      Our team is available to assist in English, Spanish, Portuguese, Russian, and Chinese.
+    </p>
+  </div>
+
+  <!-- Right: form -->
+  <div class="form-card reveal">
+    <h3>Send Us a Message</h3>
+    <p>Fill in the form below and our team will respond within one business day.</p>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name <span style="color:#e11d48">*</span></label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="John Smith" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="country">Country <span style="color:#e11d48">*</span></label>
+          <select class="form-select" id="country" name="country" required>
+            <option value="" disabled selected>Select country</option>
+            <option value="US">United States</option>
+            <option value="CL">Chile</option>
+            <option value="AR">Argentina</option>
+            <option value="BR">Brazil</option>
+            <option value="PE">Peru</option>
+            <option value="CO">Colombia</option>
+            <option value="MX">Mexico</option>
+            <option value="CN">China</option>
+            <option value="JP">Japan</option>
+            <option value="KR">South Korea</option>
+            <option value="TR">Turkey</option>
+            <option value="UA">Ukraine</option>
+            <option value="OTHER">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address <span style="color:#e11d48">*</span></label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="john@company.com" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone Number</label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (305) 000-0000"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="subject">Subject</label>
+        <select class="form-select" id="subject" name="subject">
+          <option value="">Select a topic</option>
+          <option value="quote">Freight Quote Request</option>
+          <option value="routes">Route Inquiry</option>
+          <option value="services">Services Information</option>
+          <option value="partnership">Partnership / Agency</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Message <span style="color:#e11d48">*</span></label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Please describe your cargo requirements, route, volume, and any other relevant details…" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
+        <p class="footer-desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/seacape-shipping" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/seacape.shipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="routes.html">Routes</a></li>
+          <li><a href="contact.html#global-presence">Global Presence</a></li>
+          <li><a href="index.html#clients">Our Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div>
+        <p class="footer-heading">Our Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html#dry-bulk">Industrial Dry Bulk Shipping</a></li>
+          <li><a href="services.html#steels">Steel &amp; Metallurgical Cargo</a></li>
+          <li><a href="services.html#project-cargo">Project Cargo &amp; Heavy Lift</a></li>
+          <li><a href="services.html#chartering">Chartering &amp; Vessel Management</a></li>
+          <li><a href="services.html#freight-forwarder">Freight Forwarder</a></li>
+          <li><a href="services.html#inland-chile">Inland Logistics – Chile</a></li>
+          <li><a href="services.html#inland-peru">Inland Logistics – Peru</a></li>
+        </ul>
+      </div>
+
+      <!-- International Presence -->
+      <div>
+        <p class="footer-heading">International Presence</p>
+        <ul class="footer-links footer-presence">
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Miami, USA — Headquarters
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Santiago, Chile
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lima, Peru
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            São Paulo, Brazil
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Shanghai, China
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Zug, Switzerland — Seacape GmbH
+          </li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Odessa, Ukraine
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <p class="footer-heading">Contact Us</p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          9150 S. Dadeland Blvd., Suite 908<br/>Miami, Florida 33156, USA
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.49a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +1 (305) 670-4484
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:operations@seacape-shipping.com">operations@seacape-shipping.com</a>
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:charter@seacape-shipping.com">charter@seacape-shipping.com</a>
+        </p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
+      <p class="footer-copy">Miami \&nbsp;\&middot;\&nbsp; Santiago \&nbsp;\&middot;\&nbsp; Lima \&nbsp;\&middot;\&nbsp; Brazil \&nbsp;\&middot;\&nbsp; Shanghai \&nbsp;\&middot;\&nbsp; Zug \&nbsp;\&middot;\&nbsp; Odessa</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
