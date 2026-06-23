@@ -129,30 +129,34 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="routes.html">Routes</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+      <li><a href="routes.html" data-i18n="nav_routes">Routes</a></li>
+      <li><a href="tools.html" data-i18n="nav_tools">Tools</a></li>
+      <li><a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact Us</a></li>
     </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" aria-label="English"><svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><rect width="20" height="14" fill="#012169"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="2.8"/><path d="M0 0L20 14M20 0L0 14" stroke="#C8102E" stroke-width="1.8"/><path d="M10 0V14M0 7H20" stroke="#fff" stroke-width="4.6"/><path d="M10 0V14M0 7H20" stroke="#C8102E" stroke-width="2.8"/></svg></button>
+      <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" aria-label="Español"><svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><rect width="20" height="14" fill="#AA151B"/><rect y="3.5" width="20" height="7" fill="#F1BF00"/></svg></button>
+    </div>
     <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="routes.html">Routes</a>
-  <a href="tools.html">Tools</a>
-  <a href="contact.html" class="nav-cta">Contact Us</a>
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="about.html" data-i18n="nav_about">About</a>
+  <a href="services.html" data-i18n="nav_services">Services</a>
+  <a href="routes.html" data-i18n="nav_routes">Routes</a>
+  <a href="tools.html" data-i18n="nav_tools">Tools</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact Us</a>
 </div>
 
 <!-- Hero -->
 <div class="page-hero">
   <div class="page-hero-content">
-    <h1 class="page-hero-title">Our Services</h1>
-    <p class="page-hero-sub">Comprehensive maritime and logistics solutions, built on over 60 years of expertise moving the world's most demanding cargoes.</p>
+    <h1 class="page-hero-title" data-i18n="svc_hero_title">Our Services</h1>
+    <p class="page-hero-sub" data-i18n="svc_hero_sub">Comprehensive maritime and logistics solutions, built on over 60 years of expertise moving the world's most demanding cargoes.</p>
   </div>
 </div>
 
@@ -164,8 +168,8 @@
   <div class="svc-card reveal" id="dry-bulk">
     <div class="svc-header" onclick="toggleService(this)">
       <div class="svc-header-text">
-        <h2>Industrial Dry Bulk Shipping</h2>
-        <p class="svc-intro">SEACAPE is a premier dry bulk shipping enterprise, delivering comprehensive global maritime logistics solutions across a diverse range of economic sectors.</p>
+        <h2 data-i18n="svc_drybulk_title">Industrial Dry Bulk Shipping</h2>
+        <p class="svc-intro" data-i18n="svc_drybulk_intro">SEACAPE is a premier dry bulk shipping enterprise, delivering comprehensive global maritime logistics solutions across a diverse range of economic sectors.</p>
       </div>
       <div class="svc-header-img">
         <img src="assets/images/services/drybulk_main.jpg" alt="Dry Bulk Shipping"/>
@@ -178,14 +182,14 @@
     <div class="svc-expanded">
       <div class="svc-expanded-inner">
         <div class="svc-expanded-text">
-          <p>With a leadership team boasting over 60 years of maritime heritage, Seacape specializes in the complex transport of bulk and breakbulk commodities. Our expertise includes the specialized handling of steel products, sugar, coal, copper concentrates, and grains, among other essential dry cargoes.</p>
-          <p>We maintain a strategic operational focus on Handysize through Panamax vessel segments, providing dependable ocean freight services to a portfolio of world-class trading houses and industrial partners.</p>
-          <p>Headquartered in Miami, Florida, with a key commercial hub in Santiago, Chile, Seacape maintains a robust global presence through a network of strategic representatives in all major international markets.</p>
+          <p data-i18n="svc_drybulk_p1">With a leadership team boasting over 60 years of maritime heritage, Seacape specializes in the complex transport of bulk and breakbulk commodities. Our expertise includes the specialized handling of steel products, sugar, coal, copper concentrates, and grains, among other essential dry cargoes.</p>
+          <p data-i18n="svc_drybulk_p2">We maintain a strategic operational focus on Handysize through Panamax vessel segments, providing dependable ocean freight services to a portfolio of world-class trading houses and industrial partners.</p>
+          <p data-i18n="svc_drybulk_p3">Headquartered in Miami, Florida, with a key commercial hub in Santiago, Chile, Seacape maintains a robust global presence through a network of strategic representatives in all major international markets.</p>
         </div>
         <div class="svc-photo-grid">
-          <div class="svc-photo"><img src="assets/images/services/drybulk_main.jpg" alt="Dry Bulk Cargo Hold"/></div>
-          <div class="svc-photo"><img src="assets/images/services/drybulk_01.jpg" alt="Dry Bulk Operations"/></div>
-          <div class="svc-photo"><img src="assets/images/services/drybulk_02.jpg" alt="Dry Bulk Vessel"/></div>
+          <div class="svc-photo"><img src="assets/images/services/drybulk_new_01.jpg" alt="Dry Bulk Shipping"/></div>
+          <div class="svc-photo"><img src="assets/images/services/drybulk_new_02.jpg" alt="Dry Bulk Cargo"/></div>
+          <div class="svc-photo"><img src="assets/images/services/drybulk_new_04.jpg" alt="Dry Bulk Vessel"/></div>
         </div>
       </div>
     </div>
@@ -195,8 +199,8 @@
   <div class="svc-card reveal" id="steels">
     <div class="svc-header" onclick="toggleService(this)">
       <div class="svc-header-text">
-        <h2>Steel &amp; Metallurgical Cargo Logistics</h2>
-        <p class="svc-intro">SEACAPE provides high-performance maritime solutions specifically engineered for the global steel and metallurgical industries.</p>
+        <h2 data-i18n="svc_steel_title">Steel &amp; Metallurgical Cargo Logistics</h2>
+        <p class="svc-intro" data-i18n="svc_steel_intro">SEACAPE provides high-performance maritime solutions specifically engineered for the global steel and metallurgical industries.</p>
       </div>
       <div class="svc-header-img">
         <img src="assets/images/services/steel_main.jpg" alt="Steel Cargo"/>
@@ -209,11 +213,10 @@
     <div class="svc-expanded">
       <div class="svc-expanded-inner">
         <div class="svc-expanded-text">
-          <p>We specialize in the end-to-end transport of high-value industrial commodities, including finished steel, copper concentrates, and metallurgical bulks. By leveraging our strategic fleet of Handysize to Panamax vessels, we provide the reliability and technical expertise required to move large-scale industrial cargo across major international markets.</p>
-          <p>Our primary operational focus is the maintenance of "Blue Condition" standards. We recognize that for premium steel products, surface integrity and the prevention of oxidation are critical. Through rigorous technical supervision, specialized stowage, and moisture-control protocols, we ensure that cargo reaches its final destination in its original, rust-free, and prime commercial state.</p>
+          <p data-i18n="svc_steel_p1">We specialize in the end-to-end transport of high-value industrial commodities, including finished steel, copper concentrates, and metallurgical bulks. By leveraging our strategic fleet of Handysize to Panamax vessels, we provide the reliability and technical expertise required to move large-scale industrial cargo across major international markets.</p>
+          <p data-i18n="svc_steel_p2">Our primary operational focus is the maintenance of "Blue Condition" standards. We recognize that for premium steel products, surface integrity and the prevention of oxidation are critical. Through rigorous technical supervision, specialized stowage, and moisture-control protocols, we ensure that cargo reaches its final destination in its original, rust-free, and prime commercial state.</p>
         </div>
         <div class="svc-photo-grid">
-          <div class="svc-photo"><img src="assets/images/services/steel_01.jpg" alt="Steel Coils"/></div>
           <div class="svc-photo"><img src="assets/images/services/steel_02.jpg" alt="Steel Coil Cargo"/></div>
           <div class="svc-photo"><img src="assets/images/services/steel_03.jpg" alt="Steel Loading"/></div>
           <div class="svc-photo"><img src="assets/images/services/steel_04.jpg" alt="Steel Operations"/></div>
@@ -226,8 +229,8 @@
   <div class="svc-card reveal" id="chartering">
     <div class="svc-header" onclick="toggleService(this)">
       <div class="svc-header-text">
-        <h2>Chartering &amp; Vessel Commercial Management</h2>
-        <p class="svc-intro">Our Chartering team is responsible for securing profitable employment for vessels by matching cargo demand with available ships and negotiating charter contracts.</p>
+        <h2 data-i18n="svc_chartering_title">Chartering &amp; Vessel Commercial Management</h2>
+        <p class="svc-intro" data-i18n="svc_chartering_intro">Our Chartering team is responsible for securing profitable employment for vessels by matching cargo demand with available ships and negotiating charter contracts.</p>
       </div>
       <div class="svc-header-img">
         <img src="assets/images/services/charter_main.jpg" alt="Chartering"/>
@@ -240,8 +243,8 @@
     <div class="svc-expanded">
       <div class="svc-expanded-inner">
         <div class="svc-expanded-text">
-          <p>We analyze market trends, hire rates, and bunker costs to make informed commercial decisions, while managing relationships with charterers, shipowners, and brokers. We are also involved in negotiating key terms such as hire, laytime, and demurrage.</p>
-          <p>By coordinating with operations teams to ensure efficient voyage execution and managing commercial risks, our chartering desk serves as a key driver of revenue and performance for each engagement.</p>
+          <p data-i18n="svc_chartering_p1">We analyze market trends, hire rates, and bunker costs to make informed commercial decisions, while managing relationships with charterers, shipowners, and brokers. We are also involved in negotiating key terms such as hire, duration, cargo and trading ranges.</p>
+          <p data-i18n="svc_chartering_p2">By coordinating with operations teams to ensure efficient voyage execution and managing commercial risks, our chartering desk serves as a key driver of revenue and performance for each engagement.</p>
         </div>
       </div>
     </div>
@@ -251,8 +254,8 @@
   <div class="svc-card reveal" id="inland">
     <div class="svc-header" onclick="toggleService(this)">
       <div class="svc-header-text">
-        <h2>Inland Logistics</h2>
-        <p class="svc-intro">Our Inland Logistics Department is responsible for the strategic planning and coordination of cargo transport, managing movements from port terminals or private bonded warehouses to various client destinations and production plants.</p>
+        <h2 data-i18n="svc_inland_title">Inland Logistics</h2>
+        <p class="svc-intro" data-i18n="svc_inland_intro">Our Inland Logistics Department is responsible for the strategic planning and coordination of cargo transport, managing movements from port terminals or private bonded warehouses to various client destinations and production plants.</p>
       </div>
       <div class="svc-header-img">
         <img src="assets/images/services/inland_main.jpg" alt="Inland Logistics"/>
@@ -265,95 +268,27 @@
     <div class="svc-expanded">
       <div class="svc-expanded-inner">
         <div class="svc-expanded-text">
-          <p>By optimizing route management and resource allocation, the department ensures strict adherence to established lead times and the specific operational parameters required for each shipment. Core functional responsibilities include the procurement and coordination of haulage assets, meticulous dispatch planning, and the rigorous supervision of loading processes.</p>
-          <p>This area facilitates seamless communication between motor carriers and all relevant stakeholders, maintaining end-to-end visibility through real-time delivery tracking to ensure a proactive response to any operational contingencies.</p>
-          <p>The primary objective of the department is to guarantee a secure, agile, and streamlined cargo transit process. By delivering timely and cost-effective logistics solutions, the team remains dedicated to meeting the complex supply chain demands of our clients — across both Chile and Peru — with maximum operational efficiency.</p>
+          <p data-i18n="svc_inland_p1">By optimizing route management and resource allocation, the department ensures strict adherence to established lead times and the specific operational parameters required for each shipment. Core functional responsibilities include the procurement and coordination of haulage assets, meticulous dispatch planning, and the rigorous supervision of loading processes.</p>
+          <p data-i18n="svc_inland_p2">This area facilitates seamless communication between motor carriers and all relevant stakeholders, maintaining end-to-end visibility through real-time delivery tracking to ensure a proactive response to any operational contingencies.</p>
+          <p data-i18n="svc_inland_p3">The primary objective of the department is to guarantee a secure, agile, and streamlined cargo transit process. By delivering timely and cost-effective logistics solutions, the team remains dedicated to meeting the complex supply chain demands of our clients — across both Chile and Peru — with maximum operational efficiency.</p>
         </div>
         <div class="svc-photo-grid">
+          <div class="svc-photo"><img src="assets/images/services/agency_main.jpg" alt="Inland Logistics"/></div>
           <div class="svc-photo"><img src="assets/images/services/inland_01.jpg" alt="Inland Logistics"/></div>
           <div class="svc-photo"><img src="assets/images/services/inland_02.jpg" alt="Inland Transport"/></div>
-          <div class="svc-photo"><img src="assets/images/services/inland_03.jpg" alt="Logistics Operations"/></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 05 Agency in Chile -->
-  <div class="svc-card reveal" id="agency-chile">
-    <div class="svc-header" onclick="toggleService(this)">
-      <div class="svc-header-text">
-        <h2>Agency in Chile</h2>
-        <p class="svc-intro">A maritime agency in Punta Arenas plays a key role in coordinating vessels transiting the Magellan Strait, managing port calls, pilotage services, vessel supplies, and all formalities with authorities such as customs and immigration.</p>
-      </div>
-      <div class="svc-header-img">
-        <img src="assets/images/services/agency_main.jpg" alt="Agency in Chile"/>
-      </div>
-    </div>
-    <button class="svc-toggle" onclick="toggleService(this.closest('.svc-card').querySelector('.svc-header'))">
-      See more
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-    <div class="svc-expanded">
-      <div class="svc-expanded-inner">
-        <div class="svc-expanded-text">
-          <p>In addition, it organizes the transit safely according to weather conditions, maintains constant communication with maritime authorities, and provides operational reports to the shipowner, ensuring efficient and smooth navigation.</p>
-          <p>A maritime agency in Port Ventanas plays a key role in coordinating port operations, managing vessel arrivals and departures, berth scheduling, cargo operations, and all formalities with authorities such as customs and immigration. It also arranges pilotage, tug services, and vessel supplies, while maintaining close communication with terminal operators and maritime authorities. Additionally, it provides timely operational updates to the shipowner, ensuring efficient port calls and smooth operations.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 06 Project Cargo -->
-  <div class="svc-card reveal" id="project-cargo">
-    <div class="svc-header" onclick="toggleService(this)">
-      <div class="svc-header-text">
-        <h2>Project Cargo &amp; Heavy Lift Solutions</h2>
-        <p class="svc-intro">Project Cargo &amp; Heavy Lift Solutions refers to specialized logistics services focused on the handling, transportation, and coordination of oversized, heavy, or complex cargo.</p>
-      </div>
-    </div>
-    <button class="svc-toggle" onclick="toggleService(this.closest('.svc-card').querySelector('.svc-header'))">
-      See more
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-    <div class="svc-expanded">
-      <div class="svc-expanded-inner">
-        <div class="svc-expanded-text">
-          <p>These solutions include detailed planning, route analysis, coordination of lifting equipment and specialized vessels, as well as close supervision of operations to ensure safety and efficiency.</p>
-          <p>They are tailored to meet each project's specific requirements, providing reliable and seamless execution from origin to destination.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 07 Freight Forwarder -->
-  <div class="svc-card reveal" id="freight-forwarder">
-    <div class="svc-header" onclick="toggleService(this)">
-      <div class="svc-header-text">
-        <h2>Freight Forwarder</h2>
-        <p class="svc-intro">We provide a comprehensive door-to-door integrated logistics service encompassing multimodal transport solutions, including inland, ocean, and air freight, on both a domestic and international scale.</p>
-      </div>
-    </div>
-    <button class="svc-toggle" onclick="toggleService(this.closest('.svc-card').querySelector('.svc-header'))">
-      See more
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-    <div class="svc-expanded">
-      <div class="svc-expanded-inner">
-        <div class="svc-expanded-text">
-          <p>Our firm specializes in the management of general cargo, containerized freight (FCL/LCL), temperature-controlled shipments (reefer), dry bulk, and dangerous goods (IMO classes). We possess extensive expertise in the cold chain logistics of fresh fruit, salmon, and food products, as well as the transport of healthcare supplies.</p>
-          <p>Furthermore, we maintain a core competency in the shipment of steel products via container; by leveraging our dedicated inland logistics department, we guarantee precision-engineered coordination regarding stowage, haulage, and final delivery to ensure the utmost integrity of the cargo throughout the supply chain.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </div><!-- /services-page -->
 
 <!-- CTA -->
 <div class="svc-cta">
-  <h2>Ready to Move Your Cargo?</h2>
-  <p>Contact our team to discuss your requirements and receive a tailored freight solution.</p>
-  <a href="contact.html" class="btn-primary">Get in Touch</a>
+  <h2 data-i18n="svc_cta_heading">Ready to Move Your Cargo?</h2>
+  <p data-i18n="svc_cta_sub">Contact our team to discuss your requirements and receive a tailored freight solution.</p>
+  <a href="contact.html" class="btn-primary" data-i18n="svc_cta_btn">Get in Touch</a>
 </div>
 
 <footer>
@@ -361,54 +296,52 @@
     <div class="footer-grid">
       <div class="footer-brand-col">
         <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
-        <p class="footer-desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
+        <p class="footer-desc" data-i18n="footer_desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/company/seacape-shipping" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="https://www.instagram.com/seacape.shipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
+          <a href="https://www.instagram.com/seacapeshipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             Instagram
           </a>
         </div>
       </div>
       <div>
-        <p class="footer-heading">Quick Links</p>
+        <p class="footer-heading" data-i18n="footer_quick_links">Quick Links</p>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="routes.html">Routes</a></li>
-          <li><a href="contact.html#global-presence">Global Presence</a></li>
-          <li><a href="index.html#clients">Our Clients</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-heading">Our Services</p>
+        <p class="footer-heading" data-i18n="footer_our_services">Our Services</p>
         <ul class="footer-links">
-          <li><a href="services.html#dry-bulk">Industrial Dry Bulk Shipping</a></li>
-          <li><a href="services.html#steels">Steel &amp; Metallurgical Cargo</a></li>
-          <li><a href="services.html#project-cargo">Project Cargo &amp; Heavy Lift</a></li>
-          <li><a href="services.html#chartering">Chartering &amp; Vessel Management</a></li>
-          <li><a href="services.html#freight-forwarder">Freight Forwarder</a></li>
-          <li><a href="services.html#inland">Inland Logistics</a></li>
+          <li><a href="services.html#dry-bulk" data-i18n="footer_svc_drybulk">Industrial Dry Bulk Shipping</a></li>
+          <li><a href="services.html#steels" data-i18n="footer_svc_steel">Steel &amp; Metallurgical Cargo</a></li>
+          <li><a href="services.html#chartering" data-i18n="footer_svc_chartering">Chartering &amp; Vessel Management</a></li>
+          <li><a href="services.html#inland" data-i18n="footer_svc_inland">Inland Logistics</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-heading">International Presence</p>
+        <p class="footer-heading" data-i18n="footer_presence">International Presence</p>
         <ul class="footer-links footer-presence">
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Miami, USA — Headquarters</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Santiago, Chile</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima, Peru</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>São Paulo, Brazil</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Shanghai, China</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Zug, Switzerland — Seacape GmbH</li>
-          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Odessa, Ukraine</li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_miami">Miami, USA — Headquarters</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_santiago">Santiago, Chile</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_lima">Lima, Peru</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_brazil">São Paulo, Brazil</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_shanghai">Shanghai, China</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_zug">Zug, Switzerland — Seacape GmbH</span></li>
+          <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer_loc_odessa">Odessa, Ukraine</span></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <p class="footer-heading">Contact Us</p>
+        <p class="footer-heading" data-i18n="footer_contact_us">Contact Us</p>
         <p><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>9150 S. Dadeland Blvd., Suite 908<br/>Miami, Florida 33156, USA</p>
         <p><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.49a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (305) 670-4484</p>
         <p><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:operations@seacape-shipping.com">operations@seacape-shipping.com</a></p>
@@ -416,20 +349,21 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
       <p class="footer-copy">Miami \&nbsp;\&middot;\&nbsp; Santiago \&nbsp;\&middot;\&nbsp; Lima \&nbsp;\&middot;\&nbsp; Brazil \&nbsp;\&middot;\&nbsp; Shanghai \&nbsp;\&middot;\&nbsp; Zug \&nbsp;\&middot;\&nbsp; Odessa</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
 <script>
   function toggleService(header) {
     const card = header.closest('.svc-card');
     const isOpen = card.classList.contains('open');
     card.classList.toggle('open', !isOpen);
     const btn = card.querySelector('.svc-toggle');
-    btn.childNodes[0].textContent = isOpen ? 'See more' : 'See less';
+    btn.childNodes[0].textContent = isOpen ? t('svc_see_more') : t('svc_see_less');
   }
 
   // Auto-open if URL has a hash matching a card
@@ -440,7 +374,7 @@
       if (target && target.classList.contains('svc-card')) {
         target.classList.add('open');
         const btn = target.querySelector('.svc-toggle');
-        btn.childNodes[0].textContent = 'See less';
+        btn.childNodes[0].textContent = t('svc_see_less');
       }
     }
   });

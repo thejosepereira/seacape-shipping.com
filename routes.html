@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Routes – Seacape Shipping</title>
-  <meta name="description" content="Seacape operates four primary global shipping corridors — Black Sea/Mediterranean, US East/Gulf, Far East, and West Central South America."/>
+  <meta name="description" content="Seacape operates five primary global shipping corridors — Black Sea/Mediterranean, East Coast/Gulf, Far East, West &amp; Central South America, and Continent/Baltic."/>
   <link rel="stylesheet" href="css/styles.css"/>
   
   <style>
@@ -99,29 +99,33 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="routes.html">Routes</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+      <li><a href="routes.html" data-i18n="nav_routes">Routes</a></li>
+      <li><a href="tools.html" data-i18n="nav_tools">Tools</a></li>
+      <li><a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact Us</a></li>
     </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" aria-label="English"><svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><rect width="20" height="14" fill="#012169"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="2.8"/><path d="M0 0L20 14M20 0L0 14" stroke="#C8102E" stroke-width="1.8"/><path d="M10 0V14M0 7H20" stroke="#fff" stroke-width="4.6"/><path d="M10 0V14M0 7H20" stroke="#C8102E" stroke-width="2.8"/></svg></button>
+      <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" aria-label="Español"><svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><rect width="20" height="14" fill="#AA151B"/><rect y="3.5" width="20" height="7" fill="#F1BF00"/></svg></button>
+    </div>
     <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="routes.html">Routes</a>
-  <a href="tools.html">Tools</a>
-  <a href="contact.html" class="nav-cta">Contact Us</a>
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="about.html" data-i18n="nav_about">About</a>
+  <a href="services.html" data-i18n="nav_services">Services</a>
+  <a href="routes.html" data-i18n="nav_routes">Routes</a>
+  <a href="tools.html" data-i18n="nav_tools">Tools</a>
+  <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact Us</a>
 </div>
 
 <div class="page-hero">
   <div class="page-hero-content">
-        <h1 class="page-hero-title">Our Shipping Routes</h1>
-    <p class="page-hero-sub">Four primary trade corridors connecting the world's key loading and discharging ports, supported by Seacape's network across the Americas, Europe, and Asia.</p>
+        <h1 class="page-hero-title" data-i18n="routes_hero_title">Our Shipping Routes</h1>
+    <p class="page-hero-sub" data-i18n="routes_hero_sub">Reliable and efficient shipping solutions across key international trade lanes, connecting major exporting and importing regions through flexible and commercially driven logistics strategies.</p>
   </div>
 </div>
 
@@ -130,30 +134,30 @@
   <div class="route-detail-inner">
     <div class="reveal">
       <div class="route-number">01</div>
-      <div class="route-header-tag">Corridor 1</div>
-      <h2>Black Sea &amp; Mediterranean</h2>
+      <div class="route-header-tag" data-i18n="route_01_corridor">Med &gt; WC/ECSA</div>
+      <h2 data-i18n="route_01_title_full">Black Sea &amp; Mediterranean</h2>
       <p>
-        One of the world's most active bulk shipping corridors, the Black Sea and Mediterranean route connects major grain-producing nations in Eastern Europe with industrial consumers across Western Europe, North Africa, and beyond. Seacape has operated in this region for decades, building deep expertise in port operations, charterers, and local agents.
+        <span data-i18n="route_01_p1">One of the world's most active bulk shipping corridors, the Black Sea and Mediterranean route bridges Europe's leading producers with prime markets across Western Europe, the Americas, and beyond. For decades, Seacape has been a trusted leader in this region, seamlessly driving the maritime carriage of grains, steel, and high-value commodities.</span>
       </p>
       <p>
-        Our coverage includes the major Ukrainian, Romanian, and Bulgarian loading ports, as well as principal discharging destinations in Turkey, Egypt, Italy, Spain, and further west.
+        <span data-i18n="route_01_p2">Our coverage includes the major loading ports of Ukraine, Türkiye, and Belgium, driving efficient transatlantic and regional trade to strategic discharge hubs across Spain, Türkiye, Germany, and key Western markets.</span>
       </p>
     </div>
   </div>
 </section>
 
-<!-- Route 2: US East / Gulf -->
+<!-- Route 2: East Coast / Gulf -->
 <section class="route-detail" id="us-east">
   <div class="route-detail-inner reverse">
     <div class="reveal">
       <div class="route-number">02</div>
-      <div class="route-header-tag">Corridor 2</div>
-      <h2>East Coast &amp; Gulf</h2>
+      <div class="route-header-tag" data-i18n="route_02_corridor">ECSA &gt; WC/USG/NCSA</div>
+      <h2 data-i18n="route_02_title_full">East Coast &amp; Gulf</h2>
       <p>
-        With our headquarters in Miami, Florida, Seacape has unparalleled access and knowledge of US East Coast and Gulf ports. This corridor is critical for US agricultural exports, steel imports, and the movement of bulk commodities between North America and global markets.
+        <span data-i18n="route_02_p1">With our headquarters in Miami, Florida, Seacape has unparalleled access and knowledge of US East Coast and Gulf ports. This corridor serves as a pivotal gateway for US agricultural exports, steel imports, and the strategic movement of bulk commodities between North America and global markets.</span>
       </p>
       <p>
-        Our Miami office provides real-time coordination and hands-on support for all shipments moving through this corridor, ensuring regulatory compliance, port efficiency, and seamless cargo handling.
+        <span data-i18n="route_02_p2">Our Miami office provides real-time coordination and hands-on support for all shipments moving through this corridor, ensuring regulatory compliance, port efficiency, and seamless cargo handling.</span>
       </p>
     </div>
   </div>
@@ -164,47 +168,47 @@
   <div class="route-detail-inner">
     <div class="reveal">
       <div class="route-number">03</div>
-      <div class="route-header-tag">Corridor 3</div>
-      <h2>Far East — Japan &amp; China</h2>
+      <div class="route-header-tag" data-i18n="route_03_corridor">FEAST &gt; WC</div>
+      <h2 data-i18n="route_03_title_full">Far East — Japan &amp; China</h2>
       <p>
-        Asia is the world's largest consumer of dry bulk commodities. Seacape's Far East corridor connects steel producers, coal importers, and agricultural buyers in Japan, China, South Korea, and Southeast Asia with supply origins across the Americas and Europe.
+        <span data-i18n="route_03_p1">The Asian corridor stands as our most active transpacific route. Through this established trade lane, Seacape manages robust two-way trade flows, seamlessly connecting producers and buyers of steel, concentrates, and other bulk commodities across Japan, China, South Korea, and Southeast Asia with the Americas. This comprehensive network optimizes the supply chain between both regions, ensuring the direct carriage of essential cargoes to the entire American West Coast.</span>
       </p>
       <p>
-        Our established relationships with Asian charterers, port agents, and shipowners allow us to execute efficiently in this highly competitive market, providing our clients with reliable coverage and competitive rates.
+        <span data-i18n="route_03_p2">Our established relationships with Asian charterers, port agents, and shipowners allow us to execute efficiently in this highly competitive market, providing our clients with reliable coverage and competitive rates.</span>
       </p>
     </div>
   </div>
 </section>
 
-<!-- Route 4: West Central South America -->
+<!-- Route 4: West & Central South America -->
 <section class="route-detail" id="south-america">
   <div class="route-detail-inner reverse">
     <div class="reveal">
       <div class="route-number">04</div>
-      <div class="route-header-tag">Corridor 4</div>
-      <h2>West &amp; Central South America</h2>
+      <div class="route-header-tag" data-i18n="route_04_corridor">WC &gt; FEAST</div>
+      <h2 data-i18n="route_04_title_full">West &amp; Central South America</h2>
       <p>
-        South America represents one of the most dynamic trade corridors for Seacape. With direct office representation through our Santiago, Chile operation and regional presence in Peru and Brazil, we are uniquely positioned to serve this market from both ends.
+        <span data-i18n="route_04_p1">South America represents one of the most dynamic trade corridors for Seacape. With direct office representation through our Santiago, Chile operation and regional presence in Peru and Brazil, we are uniquely positioned to service this market and its evolving demands from both coasts.</span>
       </p>
       <p>
-        From copper concentrate and fertilizers on the Pacific coast to soybeans, iron ore, and corn on the Atlantic side, our South American coverage is comprehensive and deeply experienced.
+        <span data-i18n="route_04_p2">Our operational coverage across the region is comprehensive, driven by deep-rooted expertise within a flexible and rapidly expanding market. Among our highest-volume fixtures are steel, grains, and concentrates, seamlessly driving cargo flows from the Pacific coast to the Atlantic. We aim to deliver a fully integrated service throughout the region, ensuring maximum coverage to satisfy the unique demands of this market with utmost efficiency.</span>
       </p>
     </div>
   </div>
 </section>
 
-<!-- Route 5: North Coast & South America -->
-<section class="route-detail" id="north-coast">
+<!-- Route 5: Continent / Baltic -->
+<section class="route-detail" id="cont-baltic">
   <div class="route-detail-inner">
     <div class="reveal">
       <div class="route-number">05</div>
-      <div class="route-header-tag">Corridor 5</div>
-      <h2>North Coast &amp; South America</h2>
+      <div class="route-header-tag" data-i18n="route_05_corridor">Cont-Baltic &gt; WC</div>
+      <h2 data-i18n="route_05_title_full">Continent &amp; Baltic</h2>
       <p>
-        Seacape maintains an active presence along the North Coast of South America, covering key Caribbean basin and Atlantic-facing ports across Colombia, Venezuela, and surrounding nations. This corridor supports the movement of coal, fertilizers, steel, and bulk commodities to and from regional markets.
+        <span data-i18n="route_05_p1">For the Continent/Baltic to West Coast South America (WCSA) route, we primarily focus on prompt cargo opportunities, including fertilizers, grains, and other bulk commodities. This trade offers attractive employment prospects, supported by a steady flow of cargoes and strong seasonal grain programs.</span>
       </p>
       <p>
-        Combined with our established South American network, this corridor connects Caribbean and northern ports with global origins and destinations, providing comprehensive coverage of the entire South American continent.
+        <span data-i18n="route_05_p2">During the respective export seasons, the market provides consistent volume and flexibility, making it an interesting and reliable trading area for geared bulk carriers.</span>
       </p>
     </div>
   </div>
@@ -213,11 +217,11 @@
 <!-- CTA -->
 <section class="offices-section" style="padding:4rem 0;">
   <div class="section-inner" style="text-align:center;">
-    <h2 style="color:#fff;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;letter-spacing:-.02em;margin:0 0 1rem;">Shipping to or from These Routes?</h2>
+    <h2 style="color:#fff;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;letter-spacing:-.02em;margin:0 0 1rem;" data-i18n="routes_cta_heading">Shipping to or from These Routes?</h2>
     <p style="color:rgba(255,255,255,.55);font-size:1rem;max-width:480px;margin:0 auto 2rem;line-height:1.7;">
-      Contact our team to discuss availability, rates, and scheduling for your next shipment.
+      <span data-i18n="routes_cta_sub">Contact our team to discuss availability, rates, and scheduling for your next shipment.</span>
     </p>
-    <a href="contact.html" class="btn-primary">Contact Our Team</a>
+    <a href="contact.html" class="btn-primary" data-i18n="routes_cta_btn">Contact Our Team</a>
   </div>
 </section>
 
@@ -228,13 +232,13 @@
       <!-- Brand -->
       <div class="footer-brand-col">
         <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Seacape Logistics &amp; Management Services Inc."/></a>
-        <p class="footer-desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
+        <p class="footer-desc" data-i18n="footer_desc">Worldwide maritime and logistics solutions. Connecting global markets through precision, reliability, and over 60 years of industry expertise.</p>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/company/seacape-shipping" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="https://www.instagram.com/seacape.shipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
+          <a href="https://www.instagram.com/seacapeshipping/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             Instagram
           </a>
@@ -243,26 +247,24 @@
 
       <!-- Quick Links -->
       <div>
-        <p class="footer-heading">Quick Links</p>
+        <p class="footer-heading" data-i18n="footer_quick_links">Quick Links</p>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="routes.html">Routes</a></li>
-          <li><a href="contact.html#global-presence">Global Presence</a></li>
-          <li><a href="index.html#clients">Our Clients</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <!-- Our Services -->
       <div>
-        <p class="footer-heading">Our Services</p>
+        <p class="footer-heading" data-i18n="footer_our_services">Our Services</p>
         <ul class="footer-links">
-          <li><a href="services.html#dry-bulk">Industrial Dry Bulk Shipping</a></li>
-          <li><a href="services.html#steels">Steel &amp; Metallurgical Cargo</a></li>
-          <li><a href="services.html#project-cargo">Project Cargo &amp; Heavy Lift</a></li>
-          <li><a href="services.html#chartering">Chartering &amp; Vessel Management</a></li>
-          <li><a href="services.html#freight-forwarder">Freight Forwarder</a></li>
+          <li><a href="services.html#dry-bulk" data-i18n="footer_svc_drybulk">Industrial Dry Bulk Shipping</a></li>
+          <li><a href="services.html#steels" data-i18n="footer_svc_steel">Steel &amp; Metallurgical Cargo</a></li>
+          <li><a href="services.html#chartering" data-i18n="footer_svc_chartering">Chartering &amp; Vessel Management</a></li>
           <li><a href="services.html#inland-chile">Inland Logistics – Chile</a></li>
           <li><a href="services.html#inland-peru">Inland Logistics – Peru</a></li>
         </ul>
@@ -270,42 +272,42 @@
 
       <!-- International Presence -->
       <div>
-        <p class="footer-heading">International Presence</p>
+        <p class="footer-heading" data-i18n="footer_presence">International Presence</p>
         <ul class="footer-links footer-presence">
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Miami, USA — Headquarters
+            <span data-i18n="footer_loc_miami">Miami, USA — Headquarters</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Santiago, Chile
+            <span data-i18n="footer_loc_santiago">Santiago, Chile</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Lima, Peru
+            <span data-i18n="footer_loc_lima">Lima, Peru</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            São Paulo, Brazil
+            <span data-i18n="footer_loc_brazil">São Paulo, Brazil</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Shanghai, China
+            <span data-i18n="footer_loc_shanghai">Shanghai, China</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Zug, Switzerland — Seacape GmbH
+            <span data-i18n="footer_loc_zug">Zug, Switzerland — Seacape GmbH</span>
           </li>
           <li>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Odessa, Ukraine
+            <span data-i18n="footer_loc_odessa">Odessa, Ukraine</span>
           </li>
         </ul>
       </div>
 
       <!-- Contact -->
       <div class="footer-contact">
-        <p class="footer-heading">Contact Us</p>
+        <p class="footer-heading" data-i18n="footer_contact_us">Contact Us</p>
         <p>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:.4rem;" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           9150 S. Dadeland Blvd., Suite 908<br/>Miami, Florida 33156, USA
@@ -326,12 +328,13 @@
 
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2025 Seacape Logistics &amp; Management Services Inc. All Rights Reserved.</p>
       <p class="footer-copy">Miami \&nbsp;\&middot;\&nbsp; Santiago \&nbsp;\&middot;\&nbsp; Lima \&nbsp;\&middot;\&nbsp; Brazil \&nbsp;\&middot;\&nbsp; Shanghai \&nbsp;\&middot;\&nbsp; Zug \&nbsp;\&middot;\&nbsp; Odessa</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
 </body>
 </html>

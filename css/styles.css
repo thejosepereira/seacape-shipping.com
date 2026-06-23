@@ -76,6 +76,21 @@ body {
 }
 .nav-cta:hover { background: #0d2035 !important; }
 
+/* ── Language toggle ──────────────────────── */
+.lang-toggle {
+  display: flex; align-items: center; gap: .35rem;
+}
+.lang-btn {
+  display: flex; align-items: center; justify-content: center;
+  background: none; border: 2px solid transparent;
+  cursor: pointer; padding: 3px; border-radius: 3px;
+  opacity: .55; transition: opacity 180ms, border-color 180ms;
+  line-height: 0;
+}
+.lang-btn:hover { opacity: .85; }
+.lang-btn.active { opacity: 1; border-color: var(--navy); }
+.lang-btn svg, .lang-btn img { display: block; pointer-events: none; }
+
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
   background: none; border: none; cursor: pointer; padding: 4px;
@@ -146,8 +161,8 @@ body {
 .hero {
   background: var(--navy);
   padding-top: 76px;
-  /* 1608/3840 = 41.875% — matches video aspect ratio */
-  min-height: calc(41.875vw + 76px);
+  /* Lock section to video aspect ratio (1608/3840 = 41.875%) so video always fits exactly */
+  height: calc(41.875vw + 76px);
   display: flex; align-items: center;
   position: relative; overflow: hidden;
 }
