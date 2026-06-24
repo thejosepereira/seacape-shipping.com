@@ -16,10 +16,18 @@
     .route-detail:last-child { border-bottom: none; }
     .route-detail-inner {
       max-width: 1280px; margin: 0 auto; padding: 0 2rem;
-      display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      grid-template-rows: auto 1fr;
+      column-gap: 5rem; row-gap: 0;
+      align-items: start;
     }
-    .route-detail-inner.reverse { direction: rtl; }
-    .route-detail-inner.reverse > * { direction: ltr; }
+    .route-text-header { grid-column: 1; grid-row: 1; padding-bottom: 1rem; }
+    .route-graphic    { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+    .route-text-body  { grid-column: 1; grid-row: 2; }
+    .route-detail-inner.reverse .route-text-header { grid-column: 2; }
+    .route-detail-inner.reverse .route-graphic     { grid-column: 1; }
+    .route-detail-inner.reverse .route-text-body   { grid-column: 2; }
     .route-number {
       font-size: 5rem; font-weight: 800; color: rgba(255,255,255,.05);
       line-height: 1; margin-bottom: .5rem; letter-spacing: -.04em;
@@ -46,9 +54,17 @@
       mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
     }
     @media (max-width: 768px) {
-      .route-detail-inner { grid-template-columns: 1fr; gap: 2.5rem; direction: ltr; }
-      .route-detail-inner.reverse { direction: ltr; }
-      .route-graphic { order: -1; }
+      .route-detail-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0; row-gap: 1.5rem;
+      }
+      .route-text-header,
+      .route-detail-inner.reverse .route-text-header { grid-column: 1; grid-row: 1; }
+      .route-graphic,
+      .route-detail-inner.reverse .route-graphic     { grid-column: 1; grid-row: 2; }
+      .route-text-body,
+      .route-detail-inner.reverse .route-text-body   { grid-column: 1; grid-row: 3; }
     }
   </style>
 </head>
@@ -91,18 +107,16 @@
 <!-- Route 1: Black Sea / Med -->
 <section class="route-detail" id="black-sea">
   <div class="route-detail-inner">
-    <div class="reveal">
+    <div class="route-text-header reveal">
       <div class="route-header-tag" data-i18n="route_01_corridor">Med &gt; WC/ECSA</div>
       <h2 data-i18n="route_01_title_full">Black Sea &amp; Mediterranean</h2>
-      <p>
-        <span data-i18n="route_01_p1">One of the world's most active bulk shipping corridors, the Black Sea and Mediterranean route bridges Europe's leading producers with prime markets across Western Europe, the Americas, and beyond. For decades, Seacape has been a trusted leader in this region, seamlessly driving the maritime carriage of grains, steel, and high-value commodities.</span>
-      </p>
-      <p>
-        <span data-i18n="route_01_p2">Our coverage includes the major loading ports of Ukraine, Türkiye, and Belgium, driving efficient transatlantic and regional trade to strategic discharge hubs across Spain, Türkiye, Germany, and key Western markets.</span>
-      </p>
     </div>
     <div class="route-graphic reveal">
       <img src="assets/images/routes/route_01_blacksea.png" alt="Black Sea & Mediterranean route map"/>
+    </div>
+    <div class="route-text-body reveal">
+      <p><span data-i18n="route_01_p1">One of the world's most active bulk shipping corridors, the Black Sea and Mediterranean route bridges Europe's leading producers with prime markets across Western Europe, the Americas, and beyond. For decades, Seacape has been a trusted leader in this region, seamlessly driving the maritime carriage of grains, steel, and high-value commodities.</span></p>
+      <p><span data-i18n="route_01_p2">Our coverage includes the major loading ports of Ukraine, Türkiye, and Belgium, driving efficient transatlantic and regional trade to strategic discharge hubs across Spain, Türkiye, Germany, and key Western markets.</span></p>
     </div>
   </div>
 </section>
@@ -110,18 +124,16 @@
 <!-- Route 2: East Coast / Gulf -->
 <section class="route-detail" id="us-east">
   <div class="route-detail-inner reverse">
-    <div class="reveal">
+    <div class="route-text-header reveal">
       <div class="route-header-tag" data-i18n="route_02_corridor">ECSA &gt; WC/USG/NCSA</div>
       <h2 data-i18n="route_02_title_full">East Coast &amp; Gulf</h2>
-      <p>
-        <span data-i18n="route_02_p1">With our headquarters in Miami, Florida, Seacape has unparalleled access and knowledge of US East Coast and Gulf ports. This corridor serves as a pivotal gateway for US agricultural exports, steel imports, and the strategic movement of bulk commodities between North America and global markets.</span>
-      </p>
-      <p>
-        <span data-i18n="route_02_p2">Our Miami office provides real-time coordination and hands-on support for all shipments moving through this corridor, ensuring regulatory compliance, port efficiency, and seamless cargo handling.</span>
-      </p>
     </div>
     <div class="route-graphic reveal">
       <img src="assets/images/routes/route_02_usecsa.png" alt="East Coast & Gulf route map"/>
+    </div>
+    <div class="route-text-body reveal">
+      <p><span data-i18n="route_02_p1">With our headquarters in Miami, Florida, Seacape has unparalleled access and knowledge of US East Coast and Gulf ports. This corridor serves as a pivotal gateway for US agricultural exports, steel imports, and the strategic movement of bulk commodities between North America and global markets.</span></p>
+      <p><span data-i18n="route_02_p2">Our Miami office provides real-time coordination and hands-on support for all shipments moving through this corridor, ensuring regulatory compliance, port efficiency, and seamless cargo handling.</span></p>
     </div>
   </div>
 </section>
@@ -129,18 +141,16 @@
 <!-- Route 3: Far East -->
 <section class="route-detail" id="far-east">
   <div class="route-detail-inner">
-    <div class="reveal">
+    <div class="route-text-header reveal">
       <div class="route-header-tag" data-i18n="route_03_corridor">FEAST &gt; WC</div>
       <h2 data-i18n="route_03_title_full">Far East — Japan &amp; China</h2>
-      <p>
-        <span data-i18n="route_03_p1">The Asian corridor stands as our most active transpacific route. Through this established trade lane, Seacape manages robust two-way trade flows, seamlessly connecting producers and buyers of steel, concentrates, and other bulk commodities across Japan, China, South Korea, and Southeast Asia with the Americas. This comprehensive network optimizes the supply chain between both regions, ensuring the direct carriage of essential cargoes to the entire American West Coast.</span>
-      </p>
-      <p>
-        <span data-i18n="route_03_p2">Our established relationships with Asian charterers, port agents, and shipowners allow us to execute efficiently in this highly competitive market, providing our clients with reliable coverage and competitive rates.</span>
-      </p>
     </div>
     <div class="route-graphic reveal">
       <img src="assets/images/routes/route_03_fareast.png" alt="Far East — Japan & China route map"/>
+    </div>
+    <div class="route-text-body reveal">
+      <p><span data-i18n="route_03_p1">The Asian corridor stands as our most active transpacific route. Through this established trade lane, Seacape manages robust two-way trade flows, seamlessly connecting producers and buyers of steel, concentrates, and other bulk commodities across Japan, China, South Korea, and Southeast Asia with the Americas. This comprehensive network optimizes the supply chain between both regions, ensuring the direct carriage of essential cargoes to the entire American West Coast.</span></p>
+      <p><span data-i18n="route_03_p2">Our established relationships with Asian charterers, port agents, and shipowners allow us to execute efficiently in this highly competitive market, providing our clients with reliable coverage and competitive rates.</span></p>
     </div>
   </div>
 </section>
@@ -148,18 +158,16 @@
 <!-- Route 4: West & Central South America -->
 <section class="route-detail" id="south-america">
   <div class="route-detail-inner reverse">
-    <div class="reveal">
+    <div class="route-text-header reveal">
       <div class="route-header-tag" data-i18n="route_04_corridor">WC &gt; FEAST</div>
       <h2 data-i18n="route_04_title_full">West &amp; Central South America</h2>
-      <p>
-        <span data-i18n="route_04_p1">South America represents one of the most dynamic trade corridors for Seacape. With direct office representation through our Santiago, Chile operation and regional presence in Peru and Brazil, we are uniquely positioned to service this market and its evolving demands from both coasts.</span>
-      </p>
-      <p>
-        <span data-i18n="route_04_p2">Our operational coverage across the region is comprehensive, driven by deep-rooted expertise within a flexible and rapidly expanding market. Among our highest-volume fixtures are steel, grains, and concentrates, seamlessly driving cargo flows from the Pacific coast to the Atlantic. We aim to deliver a fully integrated service throughout the region, ensuring maximum coverage to satisfy the unique demands of this market with utmost efficiency.</span>
-      </p>
     </div>
     <div class="route-graphic reveal">
       <img src="assets/images/routes/route_04_wcsa.png" alt="West & Central South America route map"/>
+    </div>
+    <div class="route-text-body reveal">
+      <p><span data-i18n="route_04_p1">South America represents one of the most dynamic trade corridors for Seacape. With direct office representation through our Santiago, Chile operation and regional presence in Peru and Brazil, we are uniquely positioned to service this market and its evolving demands from both coasts.</span></p>
+      <p><span data-i18n="route_04_p2">Our operational coverage across the region is comprehensive, driven by deep-rooted expertise within a flexible and rapidly expanding market. Among our highest-volume fixtures are steel, grains, and concentrates, seamlessly driving cargo flows from the Pacific coast to the Atlantic. We aim to deliver a fully integrated service throughout the region, ensuring maximum coverage to satisfy the unique demands of this market with utmost efficiency.</span></p>
     </div>
   </div>
 </section>
@@ -167,18 +175,16 @@
 <!-- Route 5: Continent / Baltic -->
 <section class="route-detail" id="cont-baltic">
   <div class="route-detail-inner">
-    <div class="reveal">
+    <div class="route-text-header reveal">
       <div class="route-header-tag" data-i18n="route_05_corridor">Cont-Baltic &gt; WC</div>
       <h2 data-i18n="route_05_title_full">Continent &amp; Baltic</h2>
-      <p>
-        <span data-i18n="route_05_p1">For the Continent/Baltic to West Coast South America (WCSA) route, we primarily focus on prompt cargo opportunities, including fertilizers, grains, and other bulk commodities. This trade offers attractive employment prospects, supported by a steady flow of cargoes and strong seasonal grain programs.</span>
-      </p>
-      <p>
-        <span data-i18n="route_05_p2">During the respective export seasons, the market provides consistent volume and flexibility, making it an interesting and reliable trading area for geared bulk carriers.</span>
-      </p>
     </div>
     <div class="route-graphic reveal">
       <img src="assets/images/routes/route_05_contbaltic.png" alt="Continent & Baltic route map"/>
+    </div>
+    <div class="route-text-body reveal">
+      <p><span data-i18n="route_05_p1">For the Continent/Baltic to West Coast South America (WCSA) route, we primarily focus on prompt cargo opportunities, including fertilizers, grains, and other bulk commodities. This trade offers attractive employment prospects, supported by a steady flow of cargoes and strong seasonal grain programs.</span></p>
+      <p><span data-i18n="route_05_p2">During the respective export seasons, the market provides consistent volume and flexibility, making it an interesting and reliable trading area for geared bulk carriers.</span></p>
     </div>
   </div>
 </section>
