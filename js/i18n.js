@@ -49,11 +49,11 @@ const translations = {
     routes_sub:     'A global network of trade lanes connecting the world\'s major loading and discharging ports across every ocean basin.',
     routes_cta_btn: 'View All Routes',
 
-    route_01_title: 'Black Sea / Mediterranean',
-    route_02_title: 'East Coast / Gulf',
-    route_03_title: 'Far East — Japan / China',
+    route_01_title: 'Black Sea & Mediterranean',
+    route_02_title: 'East Coast & Gulf',
+    route_03_title: 'Far East — Japan & China',
     route_04_title: 'West & Central South America',
-    route_05_title: 'North Coast & South America',
+    route_05_title: 'Continent & Baltic',
 
     // ── Index — Pillars Section ────────────────────────────────────────────
     why_heading: 'Built on Three Pillars',
@@ -78,7 +78,7 @@ const translations = {
     office_saopaulo_role: 'Brazil Office',
     office_lima_role:     'Peru Office',
     office_shanghai_role: 'China Office',
-    office_zug_role:      'Europe Office — Seacape GmbH',
+    office_zug_role:      'Europe Office',
     office_odessa_role:   'Ukraine Office',
 
     // ── Footer ─────────────────────────────────────────────────────────────
@@ -101,7 +101,7 @@ const translations = {
     footer_loc_lima:     'Lima, Peru',
     footer_loc_brazil:   'São Paulo, Brazil',
     footer_loc_shanghai: 'Shanghai, China',
-    footer_loc_zug:      'Zug, Switzerland — Seacape GmbH',
+    footer_loc_zug:      'Zug, Switzerland',
     footer_loc_odessa:   'Odessa, Ukraine',
 
     // ── About Page ─────────────────────────────────────────────────────────
@@ -224,7 +224,7 @@ const translations = {
     contact_miami_role:    'Global Headquarters',
     contact_santiago_role: 'South American Operations',
     contact_shanghai_role: 'China Office',
-    contact_zug_role:      'Europe Office — Seacape GmbH',
+    contact_zug_role:      'Europe Office',
     contact_odessa_role:   'Ukraine Office',
     contact_lima_role:     'Peru Office',
     contact_saopaulo_role: 'Brazil Office',
@@ -302,11 +302,11 @@ const translations = {
     routes_sub:     'Una red global de rutas comerciales que conecta los principales puertos de carga y descarga del mundo en todas las cuencas oceánicas.',
     routes_cta_btn: 'Ver Todas las Rutas',
 
-    route_01_title: 'Mar Negro / Mediterráneo',
-    route_02_title: 'Costa Este / Golfo',
-    route_03_title: 'Lejano Oriente — Japón / China',
+    route_01_title: 'Mar Negro y Mediterráneo',
+    route_02_title: 'Costa Este y Golfo',
+    route_03_title: 'Lejano Oriente — Japón y China',
     route_04_title: 'Sudamérica Occidental y Central',
-    route_05_title: 'Costa Norte y Sudamérica',
+    route_05_title: 'Continente y Báltico',
 
     // ── Index — Pillars Section ────────────────────────────────────────────
     why_heading: 'Sustentado en Tres Pilares',
@@ -331,7 +331,7 @@ const translations = {
     office_saopaulo_role: 'Oficina Brasil',
     office_lima_role:     'Oficina Perú',
     office_shanghai_role: 'Oficina China',
-    office_zug_role:      'Oficina Europa — Seacape GmbH',
+    office_zug_role:      'Oficina Europa',
     office_odessa_role:   'Oficina Ucrania',
 
     // ── Footer ─────────────────────────────────────────────────────────────
@@ -354,7 +354,7 @@ const translations = {
     footer_loc_lima:     'Lima, Perú',
     footer_loc_brazil:   'São Paulo, Brasil',
     footer_loc_shanghai: 'Shanghái, China',
-    footer_loc_zug:      'Zug, Suiza — Seacape GmbH',
+    footer_loc_zug:      'Zug, Suiza',
     footer_loc_odessa:   'Odessa, Ucrania',
 
     // ── About Page ─────────────────────────────────────────────────────────
@@ -477,7 +477,7 @@ const translations = {
     contact_miami_role:    'Sede Global',
     contact_santiago_role: 'Operaciones Sudamericanas',
     contact_shanghai_role: 'Oficina China',
-    contact_zug_role:      'Oficina Europa — Seacape GmbH',
+    contact_zug_role:      'Oficina Europa',
     contact_odessa_role:   'Oficina Ucrania',
     contact_lima_role:     'Oficina Perú',
     contact_saopaulo_role: 'Oficina Brasil',
