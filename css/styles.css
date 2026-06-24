@@ -657,17 +657,18 @@ footer {
   /* Content area flows below the video block */
   .hero-content { position: static; padding: 0; margin: 0; max-width: none; width: auto; z-index: auto; }
   .hero-text { max-width: none; }
-  /* Title: absolutely overlaid on the video zone */
+  /* Title: centered vertically in the visible video zone (76px–76px+65vw) */
   .hero-title {
     position: absolute;
-    top: calc(76px + 65vw - 8.5rem);
+    top: calc(76px + 65vw / 2);
+    transform: translateY(-50%);
     left: 1.5rem; right: 1.5rem;
     z-index: 3; font-size: clamp(1.8rem, 9vw, 2.5rem);
     line-height: 1.1; margin: 0;
   }
-  /* Navy panel: sub + CTA buttons */
-  .hero-panel { background: var(--navy); padding: 2rem 1.5rem; }
-  .hero-sub { font-size: .9rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: none; color: rgba(255,255,255,.75); }
+  /* Navy panel: tight fit around description + buttons */
+  .hero-panel { background: var(--navy); padding: 1.25rem 1.5rem 1.5rem; }
+  .hero-sub { font-size: .875rem; line-height: 1.65; margin-bottom: 1rem; max-width: none; color: rgba(255,255,255,.75); }
   .hero-btns { flex-wrap: nowrap; gap: .75rem; }
   .hero-btns .btn-primary,
   .hero-btns .btn-outline { padding: .75rem 1.2rem; font-size: .8rem; }
