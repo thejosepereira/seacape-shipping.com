@@ -43,23 +43,25 @@
 
 <!-- ── Hero ────────────────────────────────── -->
 <section class="hero" aria-label="Hero">
-  <!-- Background video (Vimeo) -->
-  <div aria-hidden="true" style="position:absolute;top:76px;left:0;right:0;bottom:0;overflow:hidden;z-index:0;opacity:.6;">
+  <!-- Background video (Vimeo) — absolute on desktop, block on mobile -->
+  <div aria-hidden="true" class="hero-video-bg">
     <iframe src="https://player.vimeo.com/video/1202222147?background=1&autoplay=1&loop=1&muted=1&byline=0&title=0&controls=0"
-      frameborder="0" allow="autoplay; fullscreen"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;">
+      frameborder="0" allow="autoplay; fullscreen">
     </iframe>
   </div>
-  <div class="hero-content" style="position:relative;z-index:2;">
-    <div>      <h1 class="hero-title" data-i18n-html="hero_title_html">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title" data-i18n-html="hero_title_html">
         Worldwide<br/><em>Logistics</em>
       </h1>
-      <p class="hero-sub" data-i18n="hero_sub">
-        A leading dry bulk shipping company with over 60 years of industry experience, providing reliable maritime solutions across the Americas, Mediterranean, Baltic, Asia, Caribbean, and Africa.
-      </p>
-      <div class="hero-btns">
-        <a href="contact.html" class="btn-primary" data-i18n="hero_btn_contact">Contact Us</a>
-        <a href="routes.html" class="btn-outline" data-i18n="hero_btn_routes">Our Routes</a>
+      <div class="hero-panel">
+        <p class="hero-sub" data-i18n="hero_sub">
+          A leading dry bulk shipping company with over 60 years of industry experience, providing reliable maritime solutions across the Americas, Mediterranean, Baltic, Asia, Caribbean, and Africa.
+        </p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn-primary" data-i18n="hero_btn_contact">Contact Us</a>
+          <a href="routes.html" class="btn-outline" data-i18n="hero_btn_routes">Our Routes</a>
+        </div>
       </div>
     </div>
   </div>
