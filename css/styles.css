@@ -633,9 +633,11 @@ footer {
   .stat-item:last-child { border-right: none; }
   .stat-number { font-size: 1.4rem; }
   .stat-label { font-size: .55rem; letter-spacing: .05em; margin-top: .25rem; }
-  .hero-sub { font-size: .8rem; line-height: 1.6; margin-bottom: 1.5rem; }
-  .hero-title { font-size: clamp(1.8rem, 8vw, 2.6rem); margin-bottom: 1rem; }
-  .hero-content { padding: 2.5rem 1.5rem; }
+  .hero { height: auto; min-height: 100svh; min-height: 100vh; align-items: flex-start; }
+  .hero::before { background: rgba(0,0,0,.45); }
+  .hero-content { padding: 5rem 1.5rem 3rem; }
+  .hero-sub { font-size: .875rem; line-height: 1.7; margin-bottom: 1.75rem; }
+  .hero-title { font-size: clamp(2.2rem, 10vw, 3rem); margin-bottom: 1.25rem; }
   .hero-btns { flex-wrap: nowrap; gap: .6rem; }
   .hero-btns .btn-primary,
   .hero-btns .btn-outline { padding: .75rem 1.2rem; font-size: .75rem; }
