@@ -646,29 +646,29 @@ footer {
   /* ── Mobile hero: video zone at top, navy panel below ── */
   .hero { height: auto; padding-top: 0; display: block; overflow: visible; }
   .hero::before {
-    bottom: auto; height: calc(76px + 65vw);
-    background: linear-gradient(180deg, rgba(11,31,58,.15) 0%, rgba(11,31,58,.72) 100%);
+    bottom: auto; height: calc(76px + 80vw);
+    background: linear-gradient(180deg, rgba(11,31,58,.1) 0%, rgba(11,31,58,.5) 100%);
   }
   /* Video becomes a block element with defined height */
   .hero-video-bg {
     position: relative; top: auto; left: auto; right: auto; bottom: auto;
-    height: calc(76px + 65vw); opacity: 1; display: block; z-index: 0;
+    height: calc(76px + 80vw); opacity: 1; display: block; z-index: 0;
   }
   /* Content area flows below the video block */
   .hero-content { position: static; padding: 0; margin: 0; max-width: none; width: auto; z-index: auto; }
   .hero-text { max-width: none; }
-  /* Title: centered vertically in the visible video zone (76px–76px+65vw) */
+  /* Title: centered vertically in the visible video zone (76px–76px+80vw) */
   .hero-title {
     position: absolute;
-    top: calc(76px + 65vw / 2);
+    top: calc(76px + 80vw / 2);
     transform: translateY(-50%);
     left: 1.5rem; right: 1.5rem;
     z-index: 3; font-size: clamp(1.8rem, 9vw, 2.5rem);
     line-height: 1.1; margin: 0;
   }
   /* Navy panel: tight fit around description + buttons */
-  .hero-panel { background: var(--navy); padding: 1.25rem 1.5rem 1.5rem; }
-  .hero-sub { font-size: .875rem; line-height: 1.65; margin-bottom: 1rem; max-width: none; color: rgba(255,255,255,.75); }
+  .hero-panel { background: var(--navy); padding: 1rem 1.5rem 1.25rem; }
+  .hero-sub { font-size: .875rem; line-height: 1.6; margin-bottom: .875rem; max-width: none; color: rgba(255,255,255,.75); }
   .hero-btns { flex-wrap: nowrap; gap: .75rem; }
   .hero-btns .btn-primary,
   .hero-btns .btn-outline { padding: .75rem 1.2rem; font-size: .8rem; }
