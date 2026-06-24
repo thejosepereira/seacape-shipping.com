@@ -10,86 +10,43 @@
   <style>
     .route-detail {
       padding: 5rem 0;
-      border-bottom: 1px solid var(--border);
+      background: var(--navy);
+      border-bottom: 1px solid rgba(255,255,255,.07);
     }
-    .route-detail:nth-child(even) { background: #fff; }
     .route-detail:last-child { border-bottom: none; }
     .route-detail-inner {
       max-width: 1280px; margin: 0 auto; padding: 0 2rem;
-      display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start;
+      display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: center;
     }
     .route-detail-inner.reverse { direction: rtl; }
     .route-detail-inner.reverse > * { direction: ltr; }
     .route-number {
-      font-size: 5rem; font-weight: 800; color: rgba(3,105,161,.08);
+      font-size: 5rem; font-weight: 800; color: rgba(255,255,255,.05);
       line-height: 1; margin-bottom: .5rem; letter-spacing: -.04em;
     }
     .route-header-tag {
       display: inline-flex; align-items: center; gap: .4rem;
-      background: rgba(3,105,161,.1); border: 1px solid rgba(3,105,161,.2);
-      color: var(--ocean); font-size: .75rem; font-weight: 600;
+      background: rgba(65,142,214,.15); border: 1px solid rgba(65,142,214,.3);
+      color: #418ED6; font-size: .75rem; font-weight: 600;
       letter-spacing: .06em; text-transform: uppercase;
       padding: .3rem .75rem; border-radius: 100px;
       margin-bottom: 1rem; width: fit-content;
     }
     .route-detail h2 {
       font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700;
-      letter-spacing: -.02em; margin: 0 0 1rem; color: var(--text);
+      letter-spacing: -.02em; margin: 0 0 1rem; color: #fff;
     }
-    .route-detail p { color: var(--muted); line-height: 1.75; margin: 0 0 1.5rem; }
-    .port-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem;
+    .route-detail p { color: rgba(255,255,255,.6); line-height: 1.75; margin: 0 0 1.5rem; }
+    .route-graphic {
+      width: 100%; border-radius: 12px; overflow: hidden; display: block;
     }
-    .port-item {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: 8px; padding: .75rem 1rem;
-      font-size: .875rem; font-weight: 500; color: var(--text);
-      display: flex; align-items: center; gap: .5rem;
-    }
-    .port-item::before {
-      content: ''; width: 6px; height: 6px; border-radius: 50%;
-      background: var(--ocean); flex-shrink: 0;
-    }
-    .route-map-card {
-      background: var(--navy); border-radius: 16px; padding: 2rem;
-      position: relative; overflow: hidden; min-height: 280px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-    }
-    .route-map-bg {
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 60% 40%, rgba(3,105,161,.25) 0%, transparent 70%);
-    }
-    .route-map-grid {
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    .route-map-content { position: relative; z-index: 1; }
-    .route-corridor-line {
-      height: 2px; background: linear-gradient(90deg, var(--ocean), rgba(3,105,161,.2));
-      border-radius: 1px; margin-bottom: 1.5rem;
-      position: relative;
-    }
-    .route-corridor-line::before,
-    .route-corridor-line::after {
-      content: ''; position: absolute; top: 50%; transform: translateY(-50%);
-      width: 8px; height: 8px; border-radius: 50%; background: var(--ocean);
-    }
-    .route-corridor-line::before { left: 0; }
-    .route-corridor-line::after { right: 0; background: rgba(3,105,161,.4); }
-    .route-map-label { color: rgba(255,255,255,.5); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .5rem; }
-    .route-map-title { color: #fff; font-size: 1.1rem; font-weight: 600; }
-    .commodity-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
-    .ctag {
-      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
-      color: rgba(255,255,255,.65); font-size: .75rem; font-weight: 500;
-      padding: .25rem .65rem; border-radius: 100px;
+    .route-graphic img {
+      width: 100%; height: auto; display: block; border-radius: 12px;
     }
     @media (max-width: 768px) {
-      .route-detail-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .route-detail-inner { grid-template-columns: 1fr; gap: 2.5rem; direction: ltr; }
       .route-detail-inner.reverse { direction: ltr; }
+      .route-graphic { order: -1; }
     }
   </style>
 </head>
@@ -143,6 +100,9 @@
         <span data-i18n="route_01_p2">Our coverage includes the major loading ports of Ukraine, Türkiye, and Belgium, driving efficient transatlantic and regional trade to strategic discharge hubs across Spain, Türkiye, Germany, and key Western markets.</span>
       </p>
     </div>
+    <div class="route-graphic reveal">
+      <img src="assets/images/routes/route_01_blacksea.jpg" alt="Black Sea & Mediterranean route map"/>
+    </div>
   </div>
 </section>
 
@@ -159,6 +119,9 @@
       <p>
         <span data-i18n="route_02_p2">Our Miami office provides real-time coordination and hands-on support for all shipments moving through this corridor, ensuring regulatory compliance, port efficiency, and seamless cargo handling.</span>
       </p>
+    </div>
+    <div class="route-graphic reveal">
+      <img src="assets/images/routes/route_02_usecsa.jpg" alt="East Coast & Gulf route map"/>
     </div>
   </div>
 </section>
@@ -177,6 +140,9 @@
         <span data-i18n="route_03_p2">Our established relationships with Asian charterers, port agents, and shipowners allow us to execute efficiently in this highly competitive market, providing our clients with reliable coverage and competitive rates.</span>
       </p>
     </div>
+    <div class="route-graphic reveal">
+      <img src="assets/images/routes/route_03_fareast.jpg" alt="Far East — Japan & China route map"/>
+    </div>
   </div>
 </section>
 
@@ -194,6 +160,9 @@
         <span data-i18n="route_04_p2">Our operational coverage across the region is comprehensive, driven by deep-rooted expertise within a flexible and rapidly expanding market. Among our highest-volume fixtures are steel, grains, and concentrates, seamlessly driving cargo flows from the Pacific coast to the Atlantic. We aim to deliver a fully integrated service throughout the region, ensuring maximum coverage to satisfy the unique demands of this market with utmost efficiency.</span>
       </p>
     </div>
+    <div class="route-graphic reveal">
+      <img src="assets/images/routes/route_04_wcsa.jpg" alt="West & Central South America route map"/>
+    </div>
   </div>
 </section>
 
@@ -210,6 +179,9 @@
       <p>
         <span data-i18n="route_05_p2">During the respective export seasons, the market provides consistent volume and flexibility, making it an interesting and reliable trading area for geared bulk carriers.</span>
       </p>
+    </div>
+    <div class="route-graphic reveal">
+      <img src="assets/images/routes/route_05_contbaltic.jpg" alt="Continent & Baltic route map"/>
     </div>
   </div>
 </section>
