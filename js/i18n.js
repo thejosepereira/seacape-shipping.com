@@ -229,6 +229,8 @@ const translations = {
     contact_lima_role:     'Peru Office',
     contact_saopaulo_role: 'Brazil Office',
     contact_lang_note:  'Our team is available to assist in English, Spanish, Portuguese, Russian, and Chinese.',
+    contact_cta_text:   'Prefer to reach us directly?',
+    contact_cta_btn:    'Email Our Team',
 
     form_heading:             'Send Us a Message',
     form_sub:                 'Fill in the form below and our team will respond within one business day.',
@@ -482,6 +484,8 @@ const translations = {
     contact_lima_role:     'Oficina Perú',
     contact_saopaulo_role: 'Oficina Brasil',
     contact_lang_note:  'Nuestro equipo está disponible para atenderle en inglés, español, portugués, ruso y chino.',
+    contact_cta_text:   '¿Prefiere contactarnos directamente?',
+    contact_cta_btn:    'Escríbanos',
 
     form_heading:             'Envíenos un Mensaje',
     form_sub:                 'Complete el formulario a continuación y nuestro equipo responderá en un día hábil.',

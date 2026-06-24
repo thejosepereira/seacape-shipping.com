@@ -93,18 +93,31 @@ if (glossarySearch) {
   });
 }
 
-// Contact form basic validation
+// Contact form — submits to Formspree and forwards to chile@seacape-shipping.com
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID';
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = contactForm.querySelector('[type="submit"]');
+    const successMsg = document.getElementById('formSuccess');
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Message Sent!';
-      contactForm.reset();
-      setTimeout(() => { btn.textContent = 'Send Message'; btn.disabled = false; }, 3000);
-    }, 1200);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        contactForm.style.display = 'none';
+        if (successMsg) successMsg.style.display = 'block';
+      } else {
+        throw new Error('submit failed');
+      }
+    } catch {
+      btn.textContent = 'Error — please try again';
+      btn.disabled = false;
+    }
   });
 }

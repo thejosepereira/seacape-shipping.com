@@ -44,9 +44,29 @@
       box-shadow: 0 6px 20px rgba(3,105,161,.3);
     }
     .submit-btn:disabled { opacity: .7; cursor: not-allowed; transform: none; }
+    .contact-cta-bar {
+      text-align: center; padding: 2rem 2rem 5rem; max-width: 600px; margin: 0 auto;
+    }
+    .contact-cta-bar p { color: var(--muted); margin-bottom: 1.25rem; font-size: .95rem; }
+    .contact-cta-btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .85rem 2rem; background: var(--navy); color: #fff;
+      border-radius: 8px; font-weight: 600; text-decoration: none; font-size: .95rem;
+      transition: background 200ms, transform 200ms, box-shadow 200ms;
+    }
+    .contact-cta-btn:hover {
+      background: #162d52; transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(11,31,58,.25);
+    }
+    .form-success {
+      display: none; background: #ecfdf5; border: 1px solid #6ee7b7;
+      color: #065f46; border-radius: 8px; padding: 1rem 1.25rem;
+      font-size: .9rem; font-weight: 500; margin-bottom: 1rem; text-align: center;
+    }
     @media (max-width: 900px) {
       .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
       .form-row { grid-template-columns: 1fr; }
+      .form-card { order: -1; }
     }
   </style>
 </head>
@@ -200,6 +220,7 @@
   <div class="form-card reveal">
     <h3 data-i18n="form_heading">Send Us a Message</h3>
     <p data-i18n="form_sub">Fill in the form below and our team will respond within one business day.</p>
+    <div class="form-success" id="formSuccess">Your message has been sent. We'll be in touch within one business day.</div>
     <form id="contactForm" novalidate>
       <div class="form-row">
         <div class="form-group">
@@ -254,6 +275,14 @@
       <button type="submit" class="submit-btn" data-i18n="form_submit">Send Message</button>
     </form>
   </div>
+</div>
+
+<div class="contact-cta-bar reveal">
+  <p data-i18n="contact_cta_text">Prefer to reach us directly?</p>
+  <a href="mailto:operations@seacape-shipping.com" class="contact-cta-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span data-i18n="contact_cta_btn">Email Our Team</span>
+  </a>
 </div>
 
 <footer>
