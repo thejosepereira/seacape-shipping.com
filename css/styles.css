@@ -643,32 +643,34 @@ footer {
   .stat-item:last-child { border-right: none; }
   .stat-number { font-size: 1.4rem; }
   .stat-label { font-size: .55rem; letter-spacing: .05em; margin-top: .25rem; }
-  /* ── Mobile hero: video zone at top, navy panel below ── */
-  .hero { height: auto; padding-top: 0; display: block; overflow: visible; }
+  /* ── Mobile hero: portrait-cropped video, title + desc overlaid at bottom ── */
+  /* 80vw portrait zone is compact; overflow:hidden crops the sides of the wide video */
+  .hero { height: calc(76px + 80vw); padding-top: 0; display: block; overflow: hidden; }
+  /* Full navy at top hides sky; quick reveal to ship; dark at bottom for text */
   .hero::before {
     bottom: auto; height: calc(76px + 80vw);
-    background: linear-gradient(180deg, rgba(11,31,58,.1) 0%, rgba(11,31,58,.5) 100%);
+    background: linear-gradient(180deg, rgba(11,31,58,1) 0%, rgba(11,31,58,1) 33%, transparent 41%, transparent 46%, rgba(11,31,58,.65) 56%, rgba(11,31,58,.93) 70%, rgba(11,31,58,1) 76%);
   }
-  /* Video becomes a block element with defined height */
+  /* Video fills hero from below navbar */
   .hero-video-bg {
-    position: relative; top: auto; left: auto; right: auto; bottom: auto;
-    height: calc(76px + 80vw); opacity: 1; display: block; z-index: 0;
+    position: absolute; top: 76px; left: 0; right: 0; bottom: 0;
+    overflow: hidden; opacity: 1; z-index: 0;
   }
-  /* Content area flows below the video block */
-  .hero-content { position: static; padding: 0; margin: 0; max-width: none; width: auto; z-index: auto; }
+  /* Shift iframe up 35% to bring ship into frame; overflow:hidden clips sky */
+  .hero-video-bg iframe { top: -35%; height: 170%; }
+  /* Content: pinned to the bottom of the hero, overlaid on the gradient */
+  .hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0; margin: 0; max-width: none; width: auto; z-index: 2; }
   .hero-text { max-width: none; }
-  /* Title: centered vertically in the visible video zone (76px–76px+80vw) */
+  /* Title: normal flow within the bottom content block */
   .hero-title {
-    position: absolute;
-    top: calc(76px + 80vw / 2);
-    transform: translateY(-50%);
-    left: 1.5rem; right: 1.5rem;
-    z-index: 3; font-size: clamp(1.8rem, 9vw, 2.5rem);
-    line-height: 1.1; margin: 0;
+    position: relative; top: auto; transform: none; left: auto; right: auto;
+    display: block; padding: 0 1.5rem 0.4rem;
+    font-size: clamp(1.8rem, 9vw, 2.5rem); line-height: 1.1; margin: 0;
+    text-shadow: 0 2px 16px rgba(0,0,0,.8);
   }
-  /* Navy panel: tight fit around description + buttons */
-  .hero-panel { background: var(--navy); padding: 1rem 1.5rem 1.25rem; }
-  .hero-sub { font-size: .875rem; line-height: 1.6; margin-bottom: .875rem; max-width: none; color: rgba(255,255,255,.75); }
+  /* Panel: transparent — sits directly on the gradient, no separate navy box */
+  .hero-panel { background: transparent; padding: 0 1.5rem 1.5rem; border-top: none; }
+  .hero-sub { font-size: .875rem; line-height: 1.6; margin-bottom: .875rem; max-width: none; color: rgba(255,255,255,.9); text-shadow: 0 1px 8px rgba(0,0,0,.7); }
   .hero-btns { flex-wrap: nowrap; gap: .75rem; }
   .hero-btns .btn-primary,
   .hero-btns .btn-outline { padding: .75rem 1.2rem; font-size: .8rem; }
