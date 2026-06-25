@@ -40,7 +40,7 @@ const translations = {
     svc_05_title: 'Freight Forwarder',
     svc_05_desc:  'Door-to-door multimodal logistics — ocean, inland, and air freight for general cargo, bulk, reefer, and IMO classes.',
     svc_06_title: 'Inland Logistics',
-    svc_06_desc:  'Port-to-plant haulage coordination across Chile and Peru, fully integrated with our maritime operations.',
+    svc_06_desc:  'Port-to-plant haulage coordination worldwide, fully integrated with our maritime operations.',
     svc_07_title: 'Agency in Chile',
     svc_07_desc:  'Maritime agency services in Punta Arenas and Port Ventanas, coordinating port calls, pilotage, and vessel formalities.',
 
@@ -295,7 +295,7 @@ const translations = {
     svc_05_title: 'Agente de Carga',
     svc_05_desc:  'Logística multimodal puerta a puerta — flete marítimo, interior y aéreo para carga general, graneles, refrigerados y clases IMO.',
     svc_06_title: 'Logística Interior',
-    svc_06_desc:  'Coordinación de transporte puerto a planta en Chile y Perú, completamente integrada con nuestras operaciones marítimas.',
+    svc_06_desc:  'Coordinación de transporte puerto a planta a nivel mundial, completamente integrada con nuestras operaciones marítimas.',
     svc_07_title: 'Agencia en Chile',
     svc_07_desc:  'Servicios de agencia marítima en Punta Arenas y Puerto Ventanas, coordinando escalas, practicaje y formalidades de buques.',
 

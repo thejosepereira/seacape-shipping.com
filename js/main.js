@@ -94,7 +94,7 @@ if (glossarySearch) {
 }
 
 // Contact form — submits to Formspree and forwards to chile@seacape-shipping.com
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mvzjkbel';
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async e => {
