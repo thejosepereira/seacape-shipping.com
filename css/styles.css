@@ -643,34 +643,22 @@ footer {
   .stat-item:last-child { border-right: none; }
   .stat-number { font-size: 1.4rem; }
   .stat-label { font-size: .55rem; letter-spacing: .05em; margin-top: .25rem; }
-  /* ── Mobile hero: full-screen video, copy + CTAs pinned to bottom half ── */
-  .hero { height: 100svh; min-height: 580px; padding-top: 0; display: block; overflow: hidden; position: relative; }
-  /* No top mask — video shows immediately; tight bottom gradient for text legibility */
-  .hero::before {
-    position: absolute; inset: 0; height: 100%;
-    background: linear-gradient(180deg,
-      transparent 0%,
-      transparent 62%,
-      rgba(11,31,58,.55) 72%,
-      rgba(11,31,58,.95) 82%,
-      rgba(11,31,58,1) 90%
-    );
-  }
-  /* Video fills the full screen naturally */
-  .hero-video-bg { position: absolute; inset: 0; height: 100%; opacity: 1; overflow: hidden; z-index: 0; }
-  .hero-video-bg iframe { top: 0; height: 100%; transform: none; }
-  /* Content in the bottom 38% of the hero */
-  .hero-content { position: absolute; bottom: 5%; left: 0; right: 0; padding: 0; margin: 0; max-width: none; width: auto; z-index: 2; }
+  /* ── Mobile hero: video flush below navbar, content panel below ── */
+  .hero { height: auto; min-height: 0; padding-top: 77px; display: block; overflow: visible; position: relative; }
+  .hero::before { display: none; }
+  /* Video block sits right below navbar; container crops aerial sky by showing bottom half */
+  .hero-video-bg { position: relative; top: auto; left: auto; right: auto; bottom: auto; width: 100%; height: 56vw; overflow: hidden; opacity: 1; z-index: 0; }
+  .hero-video-bg iframe { position: absolute; left: 0; width: 100%; top: -100%; height: 200%; transform: none; }
+  /* Content panel in normal flow below the video */
+  .hero-content { position: static; bottom: auto; left: auto; right: auto; padding: 1.5rem; margin: 0; max-width: none; width: 100%; z-index: 2; background: var(--navy); }
   .hero-text { max-width: none; }
-  /* Title: in-flow, large, in the bottom content area */
   .hero-title {
     position: static; top: auto; transform: none; left: auto; right: auto;
-    display: block; padding: 0 1.5rem 0.5rem;
+    display: block; padding: 0 0 0.5rem;
     font-size: clamp(2rem, 10vw, 2.8rem); line-height: 1.05; margin: 0;
-    text-shadow: 0 2px 20px rgba(0,0,0,.6);
+    text-shadow: none;
   }
-  /* Panel: no box background — gradient covers it */
-  .hero-panel { background: transparent; padding: 0 1.5rem 1.25rem; border-top: none; }
+  .hero-panel { background: transparent; padding: 0 0 1.25rem; border-top: none; }
   .hero-sub { font-size: .9rem; line-height: 1.6; margin-bottom: 1rem; max-width: none; color: rgba(255,255,255,.85); }
   .hero-btns { flex-wrap: nowrap; gap: .75rem; }
   .hero-btns .btn-primary,
