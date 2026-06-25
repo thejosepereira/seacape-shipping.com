@@ -14,7 +14,7 @@ const translations = {
 
     // ── Index — Hero ───────────────────────────────────────────────────────
     hero_title_html: 'Worldwide<br/><em>Logistics</em>',
-    hero_sub:        'A leading dry bulk shipping company with over 60 years of industry experience, providing reliable maritime solutions across the Americas, Mediterranean, Baltic, Asia, Caribbean, and Africa.',
+    hero_sub:        'A leading dry bulk shipping company with over 60 years of industry experience, providing reliable maritime solutions worldwide.',
     hero_btn_contact: 'Contact Us',
     hero_btn_routes:  'Our Routes',
 
@@ -121,7 +121,7 @@ const translations = {
     about_intl_team:    'International Team',
 
     team_ceo:           'Chief Executive Officer',
-    team_md:            'Managing Director',
+    team_md:            'Chief Financial Officer, Managing Director',
     team_coo:           'Chief Operations Officer',
     team_chartering_dir:'Chartering Director',
     team_ops_mgr:       'Operations Manager',
@@ -228,7 +228,7 @@ const translations = {
     contact_odessa_role:   'Ukraine Office',
     contact_lima_role:     'Peru Office',
     contact_saopaulo_role: 'Brazil Office',
-    contact_lang_note:  'Our team is available to assist in English, Spanish, Portuguese, Russian, and Chinese.',
+    contact_lang_note:  'Our team is available to assist in English, Spanish, Portuguese, Ukrainian, German, and Chinese.',
     contact_cta_text:   'Prefer to reach us directly?',
     contact_cta_btn:    'Email Our Team',
 
@@ -269,7 +269,7 @@ const translations = {
 
     // ── Index — Hero ───────────────────────────────────────────────────────
     hero_title_html: 'Logística<br/><em>Mundial</em>',
-    hero_sub:        'Una empresa líder en transporte marítimo de graneles secos con más de 60 años de experiencia en la industria, brindando soluciones marítimas confiables en las Américas, el Mediterráneo, el Báltico, Asia, el Caribe y África.',
+    hero_sub:        'Una empresa líder en transporte marítimo de graneles secos con más de 60 años de experiencia en la industria, brindando soluciones marítimas confiables en todo el mundo.',
     hero_btn_contact: 'Contáctenos',
     hero_btn_routes:  'Nuestras Rutas',
 
@@ -376,7 +376,7 @@ const translations = {
     about_intl_team:    'Equipo Internacional',
 
     team_ceo:           'Director Ejecutivo',
-    team_md:            'Director Gerente',
+    team_md:            'Director Financiero, Director Gerente',
     team_coo:           'Director de Operaciones',
     team_chartering_dir:'Director de Fletamento',
     team_ops_mgr:       'Gerente de Operaciones',
@@ -483,7 +483,7 @@ const translations = {
     contact_odessa_role:   'Oficina Ucrania',
     contact_lima_role:     'Oficina Perú',
     contact_saopaulo_role: 'Oficina Brasil',
-    contact_lang_note:  'Nuestro equipo está disponible para atenderle en inglés, español, portugués, ruso y chino.',
+    contact_lang_note:  'Nuestro equipo está disponible para atenderle en inglés, español, portugués, ucraniano, alemán y chino.',
     contact_cta_text:   '¿Prefiere contactarnos directamente?',
     contact_cta_btn:    'Escríbanos',
 
