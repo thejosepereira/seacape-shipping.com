@@ -71,7 +71,7 @@ const translations = {
 
     // ── Index — Offices Section ────────────────────────────────────────────
     offices_heading:  'Our Offices',
-    offices_sub:      'We are proud to highlight our expanding global footprint. In addition to our headquarters in Miami and our South American hub in Santiago, we now have offices in Brazil and Peru — locations below.',
+    offices_sub:      'We are proud to highlight our expanding global footprint.',
     offices_cta_btn:  'Contact Our Team',
     office_miami_role:    'Global Headquarters',
     office_santiago_role: 'South American Operations',
