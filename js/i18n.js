@@ -46,7 +46,7 @@ const translations = {
 
     // ── Index — Routes Section ─────────────────────────────────────────────
     routes_heading: 'Global Corridors',
-    routes_sub:     'A global network of trade lanes connecting the world\'s major loading and discharging ports across every ocean basin.',
+    routes_sub:     'Moving cargo across the world\'s most important maritime trade routes.',
     routes_cta_btn: 'See Our Routes',
 
     route_01_title: 'Black Sea & Mediterranean',
