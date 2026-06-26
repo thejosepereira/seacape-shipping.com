@@ -199,17 +199,17 @@ const translations = {
 
     route_03_corridor: 'FEAST > WC',
     route_03_title_full: 'Far East — Japan & China',
-    route_03_p1: 'The Far East trade corridor represents one of SEACAPE\'s core operating markets. Through this established trade lane, Seacape manages robust two-way trade flows, seamlessly connecting producers and buyers of steel, concentrates, and other bulk commodities across Far East with the Americas. Supported by strong regional expertise and an extensive commercial network, we optimize supply chain efficiency across both regions, ensuring reliable transportation solutions and direct access to key markets throughout the American West Coast.',
+    route_03_p1: 'The Far East trade corridor represents one of Seacape\'s core operating markets. Through this established trade lane, Seacape manages robust two-way trade flows, seamlessly connecting producers and buyers of steel, concentrates, and other bulk commodities across Far East with the Americas. Supported by strong regional expertise and an extensive commercial network, we optimize supply chain efficiency across both regions, ensuring reliable transportation solutions and direct access to key markets throughout the American West Coast.',
     route_03_p2: '',
 
     route_04_corridor: 'ECSA > WCSA/WCCA',
     route_04_title_full: 'West & Central South America',
-    route_04_p1: 'South America represents one of SEACAPE\'s most strategic markets. With a commercial office in Santiago, Chile, and an established presence across Peru and Brazil, we are well positioned to support the region\'s evolving trade flows and logistics requirements on both the Atlantic and Pacific coasts.',
+    route_04_p1: 'South America represents one of Seacape\'s most strategic markets. With a commercial office in Santiago, Chile, and an established presence across Peru and Brazil, we are well positioned to support the region\'s evolving trade flows and logistics requirements on both the Atlantic and Pacific coasts.',
     route_04_p2: 'Our extensive regional coverage is backed by deep market knowledge, strong local relationships, and proven operational expertise, enabling the efficient movement of bulk and breakbulk cargoes throughout one of the world\'s most dynamic trading environments.',
 
     route_05_corridor: 'Cont-Baltic > WCSA/WCCA/ECSA',
     route_05_title_full: 'Continent & Baltic',
-    route_05_p1: 'The Continent and Baltic region is a key origin market for dry bulk trade into Latin America. Leveraging extensive experience along this corridor, SEACAPE provides efficient transportation solutions for a diverse range of commodities, connecting European exporters with strategic markets across WCSA, WCCA, and ECSA through reliable execution and consistent cargo flows.',
+    route_05_p1: 'The Continent and Baltic region is a key origin market for dry bulk trade into Latin America. Leveraging extensive experience along this corridor, Seacape provides efficient transportation solutions for a diverse range of commodities, connecting European exporters with strategic markets across WCSA, WCCA, and ECSA through reliable execution and consistent cargo flows.',
     route_05_p2: '',
 
     routes_cta_heading: 'Shipping to or from These Routes?',
