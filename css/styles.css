@@ -630,10 +630,10 @@ footer {
   .hero::after { display: none; }
   .hero-visual { display: none; }
   .page-hero::after { display: none; }
-}
-@media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
+}
+@media (max-width: 768px) {
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .offices-grid { grid-template-columns: 1fr !important; }
   .office-card { border-right: none !important; }
