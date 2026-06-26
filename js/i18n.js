@@ -70,7 +70,7 @@ const translations = {
     pillar_03_text:  'A 60-year track record of on-time delivery and transparent communication you can depend on.',
 
     // ── Index — Offices Section ────────────────────────────────────────────
-    offices_heading:  'Our Offices',
+    offices_heading:  'International Presence',
     offices_sub:      'We are proud to highlight our expanding global footprint.',
     offices_cta_btn:  'Contact Our Team',
     office_miami_role:    'Global Headquarters',
