@@ -26,7 +26,7 @@ const translations = {
 
     // ── Index — Services Section ───────────────────────────────────────────
     services_heading:  'Our Services',
-    services_sub:      'From industrial bulk shipping to inland logistics, our integrated offering covers every stage of the maritime and logistics chain.',
+    services_sub:      'Comprehensive maritime and logistics solutions, backed by the expertise to move the world\'s most demanding cargoes.',
     services_cta_btn:  'View All Services',
 
     svc_01_title: 'Industrial Dry Bulk Shipping',
