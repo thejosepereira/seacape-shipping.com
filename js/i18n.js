@@ -47,7 +47,7 @@ const translations = {
     // ── Index — Routes Section ─────────────────────────────────────────────
     routes_heading: 'Global Corridors',
     routes_sub:     'A global network of trade lanes connecting the world\'s major loading and discharging ports across every ocean basin.',
-    routes_cta_btn: 'View All Routes',
+    routes_cta_btn: 'See Our Routes',
 
     route_01_title: 'Black Sea & Mediterranean',
     route_02_title: 'East Coast & Gulf',
@@ -72,7 +72,7 @@ const translations = {
     // ── Index — Offices Section ────────────────────────────────────────────
     offices_heading:  'Our Offices',
     offices_sub:      'We are proud to highlight our expanding global footprint. In addition to our headquarters in Miami and our South American hub in Santiago, we now have offices in Brazil and Peru — locations below.',
-    offices_cta_btn:  'See Our Routes',
+    offices_cta_btn:  'Contact Our Team',
     office_miami_role:    'Global Headquarters',
     office_santiago_role: 'South American Operations',
     office_saopaulo_role: 'Brazil Office',
@@ -214,7 +214,7 @@ const translations = {
 
     routes_cta_heading: 'Shipping to or from These Routes?',
     routes_cta_sub:     'Contact our team to discuss availability, rates, and scheduling for your next shipment.',
-    routes_cta_btn:     'Contact Our Team',
+    routes_page_cta_btn: 'Contact Our Team',
 
     // ── Contact Page ───────────────────────────────────────────────────────
     contact_hero_title: 'Contact Seacape',
@@ -327,7 +327,7 @@ const translations = {
     // ── Index — Offices Section ────────────────────────────────────────────
     offices_heading:  'Nuestras Oficinas',
     offices_sub:      'Nos enorgullece destacar nuestra creciente huella global. Además de nuestra sede en Miami y nuestro hub sudamericano en Santiago, ahora contamos con oficinas en Brasil y Perú — ubicaciones a continuación.',
-    offices_cta_btn:  'Ver Nuestras Rutas',
+    offices_cta_btn:  'Contactar a Nuestro Equipo',
     office_miami_role:    'Sede Global',
     office_santiago_role: 'Operaciones Sudamericanas',
     office_saopaulo_role: 'Oficina Brasil',
@@ -469,7 +469,7 @@ const translations = {
 
     routes_cta_heading: '¿Envíos desde o hacia estas rutas?',
     routes_cta_sub:     'Contáctenos para discutir disponibilidad, tarifas y programación para su próximo envío.',
-    routes_cta_btn:     'Contactar a Nuestro Equipo',
+    routes_page_cta_btn: 'Contactar a Nuestro Equipo',
 
     // ── Contact Page ───────────────────────────────────────────────────────
     contact_hero_title: 'Contáctenos',
