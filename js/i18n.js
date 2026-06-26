@@ -57,7 +57,7 @@ const translations = {
 
     // ── Index — Pillars Section ────────────────────────────────────────────
     why_heading: 'Built on Three Pillars',
-    why_sub:     'For over four decades, Seacape has built its reputation on a simple promise.',
+    why_sub:     'Seacape has earned its reputation as a trusted partner in global maritime logistics.',
 
     pillar_01_num:   '01 / Service',
     pillar_01_title: 'Excellent Service',
@@ -312,7 +312,7 @@ const translations = {
 
     // ── Index — Pillars Section ────────────────────────────────────────────
     why_heading: 'Sustentado en Tres Pilares',
-    why_sub:     'Durante más de cuatro décadas, Seacape ha construido su reputación sobre una promesa simple.',
+    why_sub:     'Seacape se ha ganado su reputación como socio de confianza en la logística marítima global.',
 
     pillar_01_num:   '01 / Servicio',
     pillar_01_title: 'Excelente Servicio',
