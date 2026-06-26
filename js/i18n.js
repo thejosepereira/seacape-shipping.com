@@ -141,7 +141,7 @@ const translations = {
 
     svc_drybulk_title: 'Industrial Dry Bulk Shipping',
     svc_drybulk_intro: 'Seacape is a leading dry bulk shipping company providing integrated maritime and logistics solutions to clients across a broad spectrum of industries and global markets.',
-    svc_drybulk_p1: 'With a leadership team boasting over 60 years of maritime heritage, Seacape specializes in the complex transport of bulk and breakbulk commodities. Our company maintains an extensive and versatile portfolio, expertly managing a diverse range of commodities. We are dedicated to identifying critical supply chain constraints, enabling us to engineer immediate, high-impact solutions that optimize our clients\' operations.',
+    svc_drybulk_p1: 'Seacape specializes in the complex transport of bulk and breakbulk commodities. Our company maintains an extensive and versatile portfolio, expertly managing a diverse range of commodities. We are dedicated to identifying critical supply chain constraints, enabling us to engineer immediate, high-impact solutions that optimize our clients\' operations.',
     svc_drybulk_p2: 'Seacape\'s core operations focus on the Handysize, Supramax, Ultramax, and Panamax vessel segments, where we are recognized for delivering reliable, efficient, and customized transportation solutions to leading commodity traders, industrial producers, and multinational corporations worldwide.',
     svc_drybulk_p3: '',
 
