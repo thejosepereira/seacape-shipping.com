@@ -20,7 +20,7 @@ const translations = {
 
     // ── Stats Bar ──────────────────────────────────────────────────────────
     stat_years_label:     'Years of Experience',
-    stat_offices_label:   'Office Locations',
+    stat_offices_label:   'Locations',
     stat_mt_label:        'MT Moved Per Year',
     stat_languages_label: 'Languages Supported',
 
@@ -110,13 +110,13 @@ const translations = {
     about_story_label:    'Our Story',
     about_story_heading:  'Premier Dry Bulk Shipping Since 1965',
     about_stat_years:     'Years of Experience',
-    about_stat_offices:   'Global Offices',
+    about_stat_offices:   'Locations',
     about_stat_mt:        'MT Moved Per Year',
-    about_body_1: 'Seacape is a leading dry bulk shipping company delivering integrated maritime and logistics solutions across global markets. With extensive expertise in both bulk and breakbulk cargoes, we provide reliable transportation services for a diverse range of commodities, including steel, sugar, coal, copper concentrates, fertilizers, grains, forest products, and specialized project cargo.',
-    about_body_2: 'Headquartered in Miami, Florida, with a strategic commercial office in Santiago, Chile, Seacape combines global reach with strong regional expertise. Supported by an extensive network of commercial representatives in key international markets, we ensure close collaboration with our clients, seamless operational execution, and comprehensive coverage throughout the supply chain.',
+    about_body_1: 'Seacape is a leading dry bulk shipping company delivering integrated maritime and logistics solutions across global markets. With extensive expertise in both bulk and breakbulk cargoes, we provide reliable transportation services for a diverse range of commodities, including steel, sugar, coal, copper concentrates, fertilizers, grains, salt, and specialized project cargo.',
+    about_body_2: 'Headquartered in Miami, Florida, with strategic commercial locations around the world, Seacape combines global reach with strong regional expertise. Supported by an extensive network of commercial representatives in key international markets, we ensure close collaboration with our clients, seamless operational execution, and comprehensive coverage throughout the supply chain.',
     about_body_3: '',
     about_team_heading: 'Our Team',
-    about_team_sub:     'A global network of maritime professionals dedicated to delivering operational excellence across every trade lane we serve.',
+    about_team_sub:     'A global network of maritime professionals dedicated to delivering operational excellence.',
     about_usa_team:     'USA Team',
     about_intl_team:    'International Team',
 
@@ -128,11 +128,11 @@ const translations = {
     team_chartering_mgr:'Chartering Manager',
     team_ops_senior:    'Operations Senior Executive',
     team_proj_dev:      'Director of Project Development',
-    team_latam_dir:     'Director of Latam',
+    team_latam_dir:     'Director of LATAM',
     team_eu_dir:        'Director of Europe',
-    team_cm_peru:       'Country Manager, Peru',
-    team_cm_brazil:     'Country Manager, Brazil',
-    team_cm_china:      'Country Manager, China',
+    team_cm_peru:       'Manager, Peru',
+    team_cm_brazil:     'Manager, Brazil',
+    team_cm_china:      'Manager, China',
     team_superintendent:'Superintendent, Ukraine',
 
     // ── Services Page ──────────────────────────────────────────────────────
@@ -151,14 +151,14 @@ const translations = {
     svc_steel_p2: 'Our operational focus is maintaining Blue Condition standards throughout the voyage. We understand that for premium steel products, surface integrity and corrosion prevention are essential to preserving commercial value. Through rigorous cargo supervision, specialized stowage methods, and strict moisture-control procedures, we ensure cargo arrives at its destination in optimal condition, preserving both its quality and marketability.',
 
     svc_chartering_title: 'Chartering & Vessel Commercial Management',
-    svc_chartering_intro: 'Our Chartering team is responsible for securing profitable employment for vessels by matching cargo demand with available ships and negotiating charter contracts.',
-    svc_chartering_p1: 'Leveraging continuous analysis of market trends, freight rates, and bunker costs, we make informed commercial decisions while maintaining strong relationships with charterers, shipowners, and brokers.',
-    svc_chartering_p2: 'Through close coordination with operational teams and proactive risk management, we ensure efficient voyage execution and create lasting value, reliability, and commercial performance for every shipment.',
+    svc_chartering_intro: 'Our Chartering team secures employment for vessels by matching cargo demand with suitable tonnage and negotiating charter contracts.',
+    svc_chartering_p1: 'Driven by market insight, strong industry relationships, and proactive risk management, we deliver competitive transportation solutions and oversee every voyage with a commitment to safe, efficient, and reliable execution.',
+    svc_chartering_p2: '',
 
     svc_inland_title: 'Inland Logistics',
-    svc_inland_intro: 'Our Inland Logistics Department is responsible for the strategic planning and coordination of cargo transport, managing movements from port terminals or private bonded warehouses to various client destinations.',
-    svc_inland_p1: 'By optimizing route management and resource allocation, the department ensures strict adherence to established lead times and the specific operational parameters required for each shipment. Core functional responsibilities include the procurement and coordination of haulage assets, meticulous dispatch planning, and the rigorous supervision of loading processes.',
-    svc_inland_p2: 'The primary objective of the department is to guarantee a secure, agile, and streamlined cargo transit process with maximum operational efficiency.',
+    svc_inland_intro: "Seacape's Inland Logistics team coordinates the movement of cargo from port terminals and bonded warehouses to customer facilities with efficiency, reliability, and precision.",
+    svc_inland_p1: 'Seacape optimizes route planning and resource allocation to ensure every shipment is executed in accordance with established schedules and operational requirements. Our team coordinates haulage assets, plans dispatch operations, supervises loading activities, and maintains the highest standards of efficiency, reliability, and operational performance.',
+    svc_inland_p2: 'The primary objective of the department is to guarantee secure, punctual, and streamlined cargo transportation.',
     svc_inland_p3: '',
 
     svc_agency_title: 'Agency in Chile',
